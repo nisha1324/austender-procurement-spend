@@ -1,0 +1,587 @@
+code,title,level,goods_services,segment,segment_title,family,family_title,family_title_source
+10100000,Live animals,family,Goods,10,Live Plant and Animal Material and Accessories and Supplies,1010,Live animals,codeset
+10110000,Domestic pet products,family,Goods,10,Live Plant and Animal Material and Accessories and Supplies,1011,Domestic pet products,codeset
+10120000,Animal feed,family,Goods,10,Live Plant and Animal Material and Accessories and Supplies,1012,Animal feed,codeset
+10130000,Animal containment and habitats,family,Goods,10,Live Plant and Animal Material and Accessories and Supplies,1013,Animal containment and habitats,codeset
+10140000,Saddlery and harness goods,family,Goods,10,Live Plant and Animal Material and Accessories and Supplies,1014,Saddlery and harness goods,codeset
+10150000,Seeds and bulbs and seedlings and cuttings,family,Goods,10,Live Plant and Animal Material and Accessories and Supplies,1015,Seeds and bulbs and seedlings and cuttings,codeset
+10160000,Floriculture and silviculture products,family,Goods,10,Live Plant and Animal Material and Accessories and Supplies,1016,Floriculture and silviculture products,codeset
+10170000,Fertilizers and plant nutrients and herbicides,family,Goods,10,Live Plant and Animal Material and Accessories and Supplies,1017,Fertilizers and plant nutrients and herbicides,codeset
+10190000,Pest control products,family,Goods,10,Live Plant and Animal Material and Accessories and Supplies,1019,Pest control products,codeset
+11100000,Minerals and ores and metals,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1110,Minerals and ores and metals,codeset
+11110000,Earth and stone,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1111,Earth and stone,codeset
+11120000,Non edible plant and forestry products,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1112,Non edible plant and forestry products,codeset
+11130000,Non edible animal products,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1113,Non edible animal products,codeset
+11140000,Scrap and waste materials,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1114,Scrap and waste materials,codeset
+11150000,Fibres and threads and yarns,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1115,Fibres and threads and yarns,codeset
+11160000,Fabrics and leather materials,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1116,Fabrics and leather materials,codeset
+11170000,Alloys,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1117,Alloys,codeset
+11180000,Metal oxide,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1118,Metal oxide,codeset
+11190000,Metal waste and scrap,family,Goods,11,Mineral and Textile and Inedible Plant and Animal Materials,1119,Metal waste and scrap,codeset
+12130000,Explosive materials,family,Goods,12,Chemicals including Bio Chemicals and Gas Materials,1213,Explosive materials,codeset
+12140000,Elements and gases,family,Goods,12,Chemicals including Bio Chemicals and Gas Materials,1214,Elements and gases,codeset
+12160000,Additives,family,Goods,12,Chemicals including Bio Chemicals and Gas Materials,1216,Additives,codeset
+12170000,Colorants,family,Goods,12,Chemicals including Bio Chemicals and Gas Materials,1217,Colorants,codeset
+12180000,Waxes and oils,family,Goods,12,Chemicals including Bio Chemicals and Gas Materials,1218,Waxes and oils,codeset
+12190000,Solvents,family,Goods,12,Chemicals including Bio Chemicals and Gas Materials,1219,Solvents,codeset
+12350000,Compounds and mixtures,family,Goods,12,Chemicals including Bio Chemicals and Gas Materials,1235,Compounds and mixtures,codeset
+12360000,Pharmaceutical drug precursors,family,Goods,12,Chemicals including Bio Chemicals and Gas Materials,1236,Pharmaceutical drug precursors,codeset
+13100000,Rubber and elastomers,family,Goods,13,Resin and Rosin and Rubber and Foam and Film and Elastomeric Materials,1310,Rubber and elastomers,codeset
+13110000,Resins and rosins and other resin derived materials,family,Goods,13,Resin and Rosin and Rubber and Foam and Film and Elastomeric Materials,1311,Resins and rosins and other resin derived materials,codeset
+14100000,Paper materials,family,Goods,14,Paper Materials and Products,1410,Paper materials,codeset
+14110000,Paper products,family,Goods,14,Paper Materials and Products,1411,Paper products,codeset
+14111500,Printing and writing paper,class,Goods,14,Paper Materials and Products,1411,Paper products,codeset
+14111509,Stationery,commodity,Goods,14,Paper Materials and Products,1411,Paper products,codeset
+14120000,Industrial use papers,family,Goods,14,Paper Materials and Products,1412,Industrial use papers,codeset
+14121503,Cardboard,commodity,Goods,14,Paper Materials and Products,1412,Industrial use papers,codeset
+15100000,Fuels,family,Goods,15,Fuels and Fuel Additives and Lubricants and Anti corrosive Materials,1510,Fuels,codeset
+15110000,Gaseous fuels and additives,family,Goods,15,Fuels and Fuel Additives and Lubricants and Anti corrosive Materials,1511,Gaseous fuels and additives,codeset
+15120000,Lubricants and oils and greases and anti corrosives,family,Goods,15,Fuels and Fuel Additives and Lubricants and Anti corrosive Materials,1512,Lubricants and oils and greases and anti corrosives,codeset
+15130000,Fuel for nuclear reactors,family,Goods,15,Fuels and Fuel Additives and Lubricants and Anti corrosive Materials,1513,Fuel for nuclear reactors,codeset
+20100000,Mining and quarrying machinery and equipment,family,Goods,20,Mining and Well Drilling Machinery and Accessories,2010,Mining and quarrying machinery and equipment,codeset
+20110000,Well drilling and operation equipment,family,Goods,20,Mining and Well Drilling Machinery and Accessories,2011,Well drilling and operation equipment,codeset
+20120000,Oil and gas drilling and exploration equipment,family,Goods,20,Mining and Well Drilling Machinery and Accessories,2012,Oil and gas drilling and exploration equipment,codeset
+20130000,Oil and gas drilling and operation materials,family,Goods,20,Mining and Well Drilling Machinery and Accessories,2013,Oil and gas drilling and operation materials,codeset
+20140000,Oil and gas operating and production equipment,family,Goods,20,Mining and Well Drilling Machinery and Accessories,2014,Oil and gas operating and production equipment,codeset
+20141702,Floating offshore production platforms,commodity,Goods,20,Mining and Well Drilling Machinery and Accessories,2014,Oil and gas operating and production equipment,codeset
+21100000,Agricultural and forestry and landscape machinery and equipment,family,Goods,21,Farming and Fishing and Forestry and Wildlife Machinery and Accessories,2110,Agricultural and forestry and landscape machinery and equipment,codeset
+21110000,Fishing and aquaculture equipment,family,Goods,21,Farming and Fishing and Forestry and Wildlife Machinery and Accessories,2111,Fishing and aquaculture equipment,codeset
+22100000,Heavy construction machinery and equipment,family,Goods,22,Building and Construction Machinery and Accessories,2210,Heavy construction machinery and equipment,codeset
+23000000,Industrial Manufacturing and Processing Machinery and Accessories,segment,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,,,
+23100000,Raw materials processing machinery,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2310,Raw materials processing machinery,codeset
+23120000,Textile and fabric machinery and accessories,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2312,Textile and fabric machinery and accessories,codeset
+23130000,Lapidary machinery and equipment,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2313,Lapidary machinery and equipment,codeset
+23140000,Leatherworking repairing machinery and equipment,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2314,Leatherworking repairing machinery and equipment,codeset
+23150000,Industrial process machinery and equipment and supplies,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2315,Industrial process machinery and equipment and supplies,codeset
+23160000,Foundry machines and equipment and supplies,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2316,Foundry machines and equipment and supplies,codeset
+23180000,Industrial food and beverage equipment,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2318,Industrial food and beverage equipment,codeset
+23190000,Mixers and their parts and accessories,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2319,Mixers and their parts and accessories,codeset
+23200000,Mass transfer equipment,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2320,Mass transfer equipment,codeset
+23210000,Electronic manufacturing machinery and equipment and accessories,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2321,Electronic manufacturing machinery and equipment and accessories,codeset
+23220000,Chicken processing machinery and equipment,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2322,Chicken processing machinery and equipment,codeset
+23230000,Sawmilling and lumber processing machinery and equipment,family,Goods,23,Industrial Manufacturing and Processing Machinery and Accessories,2323,Sawmilling and lumber processing machinery and equipment,codeset
+24100000,Material handling machinery and equipment,family,Goods,24,Material Handling and Conditioning and Storage Machinery and their Accessories and Supplies,2410,Material handling machinery and equipment,codeset
+24102000,Shelving and storage,class,Goods,24,Material Handling and Conditioning and Storage Machinery and their Accessories and Supplies,2410,Material handling machinery and equipment,codeset
+24110000,Containers and storage,family,Goods,24,Material Handling and Conditioning and Storage Machinery and their Accessories and Supplies,2411,Containers and storage,codeset
+24120000,Packaging materials,family,Goods,24,Material Handling and Conditioning and Storage Machinery and their Accessories and Supplies,2412,Packaging materials,codeset
+24130000,Industrial refrigeration,family,Goods,24,Material Handling and Conditioning and Storage Machinery and their Accessories and Supplies,2413,Industrial refrigeration,codeset
+24140000,Packing supplies,family,Goods,24,Material Handling and Conditioning and Storage Machinery and their Accessories and Supplies,2414,Packing supplies,codeset
+25100000,Motor vehicles,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2510,Motor vehicles,codeset
+25101500,Passenger motor vehicles,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2510,Motor vehicles,codeset
+25101600,Product and material transport vehicles,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2510,Motor vehicles,codeset
+25101700,Safety and rescue vehicles,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2510,Motor vehicles,codeset
+25101801,Motorcycles,commodity,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2510,Motor vehicles,codeset
+25101900,Specialised and recreational vehicles,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2510,Motor vehicles,codeset
+25102000,War vehicles,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2510,Motor vehicles,codeset
+25102100,Truck tractors,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2510,Motor vehicles,codeset
+25110000,Marine transport,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2511,Marine transport,codeset
+25111500,Commercial marine craft,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2511,Marine transport,codeset
+25111700,Military watercraft,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2511,Marine transport,codeset
+25111900,Marine craft systems and subassemblies,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2511,Marine transport,codeset
+25120000,Railway and tramway machinery and equipment,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2512,Railway and tramway machinery and equipment,codeset
+25130000,Aircraft,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2513,Aircraft,codeset
+25131500,Powered fixed wing aircraft,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2513,Aircraft,codeset
+25131600,Civilian and commercial rotary wing aircraft,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2513,Aircraft,codeset
+25131700,Military fixed wing aircraft,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2513,Aircraft,codeset
+25131707,Reconnaissance or surveillance aircraft,commodity,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2513,Aircraft,codeset
+25131800,Specialty aircraft,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2513,Aircraft,codeset
+25131900,Military rotary wing aircraft,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2513,Aircraft,codeset
+25132000,Recreational aircraft,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2513,Aircraft,codeset
+25150000,Spacecraft,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2515,Spacecraft,codeset
+25151700,Satellites,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2515,Spacecraft,codeset
+25160000,Non motorized cycles,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2516,Non motorized cycles,codeset
+25170000,Transportation components and systems,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2517,Transportation components and systems,codeset
+25180000,Vehicle bodies and trailers,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2518,Vehicle bodies and trailers,codeset
+25190000,Transportation services equipment,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2519,Transportation services equipment,codeset
+25191500,Air transportation support systems and equipment,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2519,Transportation services equipment,codeset
+25191700,Vehicle servicing equipment,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2519,Transportation services equipment,codeset
+25200000,Aerospace systems and components and equipment,family,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2520,Aerospace systems and components and equipment,codeset
+25202500,Aircraft equipment,class,Goods,25,Commercial and Military and Private Vehicles and their Accessories and Components,2520,Aerospace systems and components and equipment,codeset
+26100000,Power sources,family,Goods,26,Power Generation and Distribution Machinery and Accessories,2610,Power sources,codeset
+26110000,Batteries and generators and kinetic power transmission,family,Goods,26,Power Generation and Distribution Machinery and Accessories,2611,Batteries and generators and kinetic power transmission,codeset
+26120000,Electrical wire and cable and harness,family,Goods,26,Power Generation and Distribution Machinery and Accessories,2612,Electrical wire and cable and harness,codeset
+26130000,Power generation,family,Goods,26,Power Generation and Distribution Machinery and Accessories,2613,Power generation,codeset
+26140000,Atomic and nuclear energy machinery and equipment,family,Goods,26,Power Generation and Distribution Machinery and Accessories,2614,Atomic and nuclear energy machinery and equipment,codeset
+27000000,Tools and General Machinery,segment,Goods,27,Tools and General Machinery,,,
+30100000,Structural materials and basic shapes,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3010,Structural materials and basic shapes,codeset
+30110000,Concrete and cement and plaster,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3011,Concrete and cement and plaster,codeset
+30120000,Roads and landscape,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3012,Roads and landscape,codeset
+30130000,Structural building products,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3013,Structural building products,codeset
+30140000,Insulation,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3014,Insulation,codeset
+30150000,Exterior finishing materials,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3015,Exterior finishing materials,codeset
+30160000,Interior finishing materials,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3016,Interior finishing materials,codeset
+30170000,Doors and windows and glass,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3017,Doors and windows and glass,codeset
+30180000,Plumbing fixtures,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3018,Plumbing fixtures,codeset
+30190000,Construction and maintenance support equipment,family,Goods,30,Structures and Building and Construction and Manufacturing Components and Supplies,3019,Construction and maintenance support equipment,codeset
+31100000,Castings,family,Goods,31,Manufacturing Components and Supplies,3110,Castings,codeset
+31110000,Extrusions,family,Goods,31,Manufacturing Components and Supplies,3111,Extrusions,codeset
+31120000,Machined castings,family,Goods,31,Manufacturing Components and Supplies,3112,Machined castings,codeset
+31130000,Forgings,family,Goods,31,Manufacturing Components and Supplies,3113,Forgings,codeset
+31140000,Mouldings,family,Goods,31,Manufacturing Components and Supplies,3114,Mouldings,codeset
+31150000,Rope and chain and cable and wire and strap,family,Goods,31,Manufacturing Components and Supplies,3115,Rope and chain and cable and wire and strap,codeset
+31160000,Hardware,family,Goods,31,Manufacturing Components and Supplies,3116,Hardware,codeset
+31170000,Bearings and bushings and wheels and gears,family,Goods,31,Manufacturing Components and Supplies,3117,Bearings and bushings and wheels and gears,codeset
+31180000,Gaskets and seals,family,Goods,31,Manufacturing Components and Supplies,3118,Gaskets and seals,codeset
+31190000,Grinding and polishing and smoothing materials,family,Goods,31,Manufacturing Components and Supplies,3119,Grinding and polishing and smoothing materials,codeset
+31200000,Adhesives and sealants,family,Goods,31,Manufacturing Components and Supplies,3120,Adhesives and sealants,codeset
+31210000,Paints and primers and finishes,family,Goods,31,Manufacturing Components and Supplies,3121,Paints and primers and finishes,codeset
+31220000,Dyeing and tanning extracts,family,Goods,31,Manufacturing Components and Supplies,3122,Dyeing and tanning extracts,codeset
+31230000,Machined raw stock,family,Goods,31,Manufacturing Components and Supplies,3123,Machined raw stock,codeset
+31240000,Industrial optics,family,Goods,31,Manufacturing Components and Supplies,3124,Industrial optics,codeset
+31250000,Pneumatic and hydraulic and electric control systems,family,Goods,31,Manufacturing Components and Supplies,3125,Pneumatic and hydraulic and electric control systems,codeset
+31260000,Housings and cabinets and casings,family,Goods,31,Manufacturing Components and Supplies,3126,Housings and cabinets and casings,codeset
+31270000,Machine made parts,family,Goods,31,Manufacturing Components and Supplies,3127,Machine made parts,codeset
+31280000,Stampings and sheet components,family,Goods,31,Manufacturing Components and Supplies,3128,Stampings and sheet components,codeset
+31290000,Machined extrusions,family,Goods,31,Manufacturing Components and Supplies,3129,Machined extrusions,codeset
+31300000,Machined forgings,family,Goods,31,Manufacturing Components and Supplies,3130,Machined forgings,codeset
+31310000,Fabricated pipe assemblies,family,Goods,31,Manufacturing Components and Supplies,3131,Fabricated pipe assemblies,codeset
+31320000,Fabricated bar stock assemblies,family,Goods,31,Manufacturing Components and Supplies,3132,Fabricated bar stock assemblies,codeset
+31330000,Fabricated structural assemblies,family,Goods,31,Manufacturing Components and Supplies,3133,Fabricated structural assemblies,codeset
+31340000,Fabricated sheet assemblies,family,Goods,31,Manufacturing Components and Supplies,3134,Fabricated sheet assemblies,codeset
+31350000,Fabricated tube assemblies,family,Goods,31,Manufacturing Components and Supplies,3135,Fabricated tube assemblies,codeset
+31360000,Fabricated plate assemblies,family,Goods,31,Manufacturing Components and Supplies,3136,Fabricated plate assemblies,codeset
+31370000,Refractoriness,family,Goods,31,Manufacturing Components and Supplies,3137,Refractoriness,codeset
+31380000,Magnets and magnetic materials,family,Goods,31,Manufacturing Components and Supplies,3138,Magnets and magnetic materials,codeset
+32100000,Printed circuits and integrated circuits and micro assemblies,family,Goods,32,Electronic Components and Supplies,3210,Printed circuits and integrated circuits and micro assemblies,codeset
+32110000,Discrete semiconductor devices,family,Goods,32,Electronic Components and Supplies,3211,Discrete semiconductor devices,codeset
+32120000,Passive discrete components,family,Goods,32,Electronic Components and Supplies,3212,Passive discrete components,codeset
+32130000,Electronic hardware and component parts and accessories,family,Goods,32,Electronic Components and Supplies,3213,Electronic hardware and component parts and accessories,codeset
+32140000,Electron tube devices and accessories,family,Goods,32,Electronic Components and Supplies,3214,Electron tube devices and accessories,codeset
+32150000,Automation control devices and components and accessories,family,Goods,32,Electronic Components and Supplies,3215,Automation control devices and components and accessories,codeset
+39100000,Lamps and light bulbs and lamp components,family,Goods,39,Electrical Systems and Lighting and Components and Accessories and Supplies,3910,Lamps and light bulbs and lamp components,codeset
+39110000,Lighting and Fixtures and Accessories,family,Goods,39,Electrical Systems and Lighting and Components and Accessories and Supplies,3911,Lighting and Fixtures and Accessories,codeset
+39120000,Electrical equipment and components and supplies,family,Goods,39,Electrical Systems and Lighting and Components and Accessories and Supplies,3912,Electrical equipment and components and supplies,codeset
+40100000,Heating and ventilation and air circulation,family,Goods,40,Distribution and Conditioning Systems and Equipment and Components,4010,Heating and ventilation and air circulation,codeset
+40101701,Air conditioners,commodity,Goods,40,Distribution and Conditioning Systems and Equipment and Components,4010,Heating and ventilation and air circulation,codeset
+40140000,Fluid and gas distribution,family,Goods,40,Distribution and Conditioning Systems and Equipment and Components,4014,Fluid and gas distribution,codeset
+40150000,Industrial pumps and compressors,family,Goods,40,Distribution and Conditioning Systems and Equipment and Components,4015,Industrial pumps and compressors,codeset
+40160000,Industrial filtering and purification,family,Goods,40,Distribution and Conditioning Systems and Equipment and Components,4016,Industrial filtering and purification,codeset
+40170000,Pipe piping and pipe fittings,family,Goods,40,Distribution and Conditioning Systems and Equipment and Components,4017,Pipe piping and pipe fittings,codeset
+40180000,Tubes tubing and tube fittings,family,Goods,40,Distribution and Conditioning Systems and Equipment and Components,4018,Tubes tubing and tube fittings,codeset
+41100000,Laboratory and scientific equipment,family,Goods,41,Laboratory and Measuring and Observing and Testing Equipment,4110,Laboratory and scientific equipment,codeset
+41110000,Measuring and observing and testing instruments,family,Goods,41,Laboratory and Measuring and Observing and Testing Equipment,4111,Measuring and observing and testing instruments,codeset
+41120000,Laboratory supplies and fixtures,family,Goods,41,Laboratory and Measuring and Observing and Testing Equipment,4112,Laboratory supplies and fixtures,codeset
+42000000,Medical Equipment and Accessories and Supplies,segment,Goods,42,Medical Equipment and Accessories and Supplies,,,
+42120000,Veterinary equipment and supplies,family,Goods,42,Medical Equipment and Accessories and Supplies,4212,Veterinary equipment and supplies,codeset
+42140000,Patient care and treatment products and supplies,family,Goods,42,Medical Equipment and Accessories and Supplies,4214,Patient care and treatment products and supplies,codeset
+42150000,Dental equipment and supplies,family,Goods,42,Medical Equipment and Accessories and Supplies,4215,Dental equipment and supplies,codeset
+42170000,Emergency and field medical services products,family,Goods,42,Medical Equipment and Accessories and Supplies,4217,Emergency and field medical services products,codeset
+42210000,Independent living aids for the physically challenged,family,Goods,42,Medical Equipment and Accessories and Supplies,4221,Independent living aids for the physically challenged,codeset
+42211700,Communication aids for the physically challenged,class,Goods,42,Medical Equipment and Accessories and Supplies,4221,Independent living aids for the physically challenged,codeset
+42240000,Orthopaedic and prosthetic and sports medicine products,family,Goods,42,Medical Equipment and Accessories and Supplies,4224,Orthopaedic and prosthetic and sports medicine products,codeset
+42250000,Physical and occupational therapy and rehabilitation products,family,Goods,42,Medical Equipment and Accessories and Supplies,4225,Physical and occupational therapy and rehabilitation products,codeset
+42260000,Postmortem and mortuary equipment and supplies,family,Goods,42,Medical Equipment and Accessories and Supplies,4226,Postmortem and mortuary equipment and supplies,codeset
+42270000,Respiratory and anaesthesia and resuscitation products,family,Goods,42,Medical Equipment and Accessories and Supplies,4227,Respiratory and anaesthesia and resuscitation products,codeset
+42300000,Medical training and education supplies,family,Goods,42,Medical Equipment and Accessories and Supplies,4230,Medical training and education supplies,codeset
+43190000,Communications Devices and Accessories,family,Goods,43,Information Technology Broadcasting and Telecommunications,4319,Communications Devices and Accessories,codeset
+43191501,Mobile phones,commodity,Goods,43,Information Technology Broadcasting and Telecommunications,4319,Communications Devices and Accessories,codeset
+43191510,Two way radios,commodity,Goods,43,Information Technology Broadcasting and Telecommunications,4319,Communications Devices and Accessories,codeset
+43200000,Components for information technology or broadcasting or telecommunications,family,Goods,43,Information Technology Broadcasting and Telecommunications,4320,Components for information technology or broadcasting or telecommunications,codeset
+43210000,Computer Equipment and Accessories,family,Goods,43,Information Technology Broadcasting and Telecommunications,4321,Computer Equipment and Accessories,codeset
+43211500,Computers,class,Goods,43,Information Technology Broadcasting and Telecommunications,4321,Computer Equipment and Accessories,codeset
+43211501,Computer servers,commodity,Goods,43,Information Technology Broadcasting and Telecommunications,4321,Computer Equipment and Accessories,codeset
+43211503,Notebook computers,commodity,Goods,43,Information Technology Broadcasting and Telecommunications,4321,Computer Equipment and Accessories,codeset
+43211507,Desktop computers,commodity,Goods,43,Information Technology Broadcasting and Telecommunications,4321,Computer Equipment and Accessories,codeset
+43211512,Mainframe computers,commodity,Goods,43,Information Technology Broadcasting and Telecommunications,4321,Computer Equipment and Accessories,codeset
+43211600,Computer accessories,class,Goods,43,Information Technology Broadcasting and Telecommunications,4321,Computer Equipment and Accessories,codeset
+43211711,Scanners,commodity,Goods,43,Information Technology Broadcasting and Telecommunications,4321,Computer Equipment and Accessories,codeset
+43212100,Computer printers,class,Goods,43,Information Technology Broadcasting and Telecommunications,4321,Computer Equipment and Accessories,codeset
+43220000,Data Voice or Multimedia Network Equipment or Platforms and Accessories,family,Goods,43,Information Technology Broadcasting and Telecommunications,4322,Data Voice or Multimedia Network Equipment or Platforms and Accessories,codeset
+43221500,Call management systems or accessories,class,Goods,43,Information Technology Broadcasting and Telecommunications,4322,Data Voice or Multimedia Network Equipment or Platforms and Accessories,codeset
+43222500,Network security equipment,class,Goods,43,Information Technology Broadcasting and Telecommunications,4322,Data Voice or Multimedia Network Equipment or Platforms and Accessories,codeset
+43222800,Telephony equipment,class,Goods,43,Information Technology Broadcasting and Telecommunications,4322,Data Voice or Multimedia Network Equipment or Platforms and Accessories,codeset
+43223000,Teletype equipment,class,Goods,43,Information Technology Broadcasting and Telecommunications,4322,Data Voice or Multimedia Network Equipment or Platforms and Accessories,codeset
+43230000,Software,family,Goods,43,Information Technology Broadcasting and Telecommunications,4323,Software,codeset
+44100000,Office machines and their supplies and accessories,family,Goods,44,Office Equipment and Accessories and Supplies,4410,Office machines and their supplies and accessories,codeset
+44101700,Printer and photocopier and facsimile accessories,class,Goods,44,Office Equipment and Accessories and Supplies,4410,Office machines and their supplies and accessories,codeset
+44103100,Printer and facsimile and photocopier supplies,class,Goods,44,Office Equipment and Accessories and Supplies,4410,Office machines and their supplies and accessories,codeset
+44110000,Office and desk accessories,family,Goods,44,Office Equipment and Accessories and Supplies,4411,Office and desk accessories,codeset
+44111515,File storage boxes or containers,commodity,Goods,44,Office Equipment and Accessories and Supplies,4411,Office and desk accessories,codeset
+44120000,Office supplies,family,Goods,44,Office Equipment and Accessories and Supplies,4412,Office supplies,codeset
+45100000,Printing and publishing equipment,family,Goods,45,Printing and Photographic and Audio and Visual Equipment and Supplies,4510,Printing and publishing equipment,codeset
+45101700,Printing accessories,class,Goods,45,Printing and Photographic and Audio and Visual Equipment and Supplies,4510,Printing and publishing equipment,codeset
+45110000,Audio and visual presentation and composing equipment,family,Goods,45,Printing and Photographic and Audio and Visual Equipment and Supplies,4511,Audio and visual presentation and composing equipment,codeset
+45111900,Phone and video conference equipment and hardware and controllers,class,Goods,45,Printing and Photographic and Audio and Visual Equipment and Supplies,4511,Audio and visual presentation and composing equipment,codeset
+45120000,Photographic or filming or video equipment,family,Goods,45,Printing and Photographic and Audio and Visual Equipment and Supplies,4512,Photographic or filming or video equipment,codeset
+45121500,Cameras,class,Goods,45,Printing and Photographic and Audio and Visual Equipment and Supplies,4512,Photographic or filming or video equipment,codeset
+45121600,Camera accessories,class,Goods,45,Printing and Photographic and Audio and Visual Equipment and Supplies,4512,Photographic or filming or video equipment,codeset
+45130000,Photographic and recording media,family,Goods,45,Printing and Photographic and Audio and Visual Equipment and Supplies,4513,Photographic and recording media,codeset
+45131700,Media storage,class,Goods,45,Printing and Photographic and Audio and Visual Equipment and Supplies,4513,Photographic and recording media,codeset
+46000000,Defence and Law Enforcement and Security and Safety Equipment and Supplies,segment,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,,,
+46100000,Light weapons and ammunition,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4610,Light weapons and ammunition,codeset
+46101800,Arms and ammunition accessories,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4610,Light weapons and ammunition,codeset
+46110000,Conventional war weapons,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4611,Conventional war weapons,codeset
+46120000,Missiles,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4612,Missiles,codeset
+46130000,Rockets and subsystems,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4613,Rockets and subsystems,codeset
+46140000,Launchers,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4614,Launchers,codeset
+46150000,Law enforcement,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4615,Law enforcement,codeset
+46151600,Security and control equipment,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4615,Law enforcement,codeset
+46160000,Public safety and control,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4616,Public safety and control,codeset
+46161600,Water safety,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4616,Public safety and control,codeset
+46170000,Security surveillance and detection,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4617,Security surveillance and detection,codeset
+46171500,Locks and security hardware and accessories,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4617,Security surveillance and detection,codeset
+46171600,Surveillance and detection equipment,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4617,Security surveillance and detection,codeset
+46171604,Alarm systems,commodity,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4617,Security surveillance and detection,codeset
+46171610,Security cameras,commodity,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4617,Security surveillance and detection,codeset
+46171619,Security or access control systems,commodity,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4617,Security surveillance and detection,codeset
+46180000,Personal safety and protection,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4618,Personal safety and protection,codeset
+46181500,Safety apparel,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4618,Personal safety and protection,codeset
+46181700,Face and head protection,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4618,Personal safety and protection,codeset
+46182300,Fall protection and rescue equipment,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4618,Personal safety and protection,codeset
+46190000,Fire protection,family,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4619,Fire protection,codeset
+46191500,Fire prevention,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4619,Fire protection,codeset
+46191600,Fire fighting equipment,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4619,Fire protection,codeset
+46211500,Workplace safety training aids and materials,class,Goods,46,Defence and Law Enforcement and Security and Safety Equipment and Supplies,4621,Workplace safety training aids,derived from child codes
+47100000,Water and wastewater treatment supply and disposal,family,Goods,47,Cleaning Equipment and Supplies,4710,Water and wastewater treatment supply and disposal,codeset
+47110000,Industrial laundry and dry cleaning equipment,family,Goods,47,Cleaning Equipment and Supplies,4711,Industrial laundry and dry cleaning equipment,codeset
+47120000,Janitorial equipment,family,Goods,47,Cleaning Equipment and Supplies,4712,Janitorial equipment,codeset
+47121800,Cleaning equipment,class,Goods,47,Cleaning Equipment and Supplies,4712,Janitorial equipment,codeset
+47130000,Cleaning and janitorial supplies,family,Goods,47,Cleaning Equipment and Supplies,4713,Cleaning and janitorial supplies,codeset
+47131703,Sanitary waste receptacles,commodity,Goods,47,Cleaning Equipment and Supplies,4713,Cleaning and janitorial supplies,codeset
+48000000,Service Industry Machinery and Equipment and Supplies,segment,Goods,48,Service Industry Machinery and Equipment and Supplies,,,
+48100000,Institutional food services equipment,family,Goods,48,Service Industry Machinery and Equipment and Supplies,4810,Institutional food services equipment,codeset
+48110000,Vending machines,family,Goods,48,Service Industry Machinery and Equipment and Supplies,4811,Vending machines,codeset
+49100000,Collectibles and awards,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4910,Collectibles and awards,codeset
+49101701,Medals,commodity,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4910,Collectibles and awards,codeset
+49120000,Camping and outdoor equipment and accessories,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4912,Camping and outdoor equipment and accessories,codeset
+49130000,Fishing and hunting equipment,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4913,Fishing and hunting equipment,codeset
+49140000,Watersports equipment,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4914,Watersports equipment,codeset
+49150000,Winter sports equipment,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4915,Winter sports equipment,codeset
+49170000,Gymnastics and boxing equipment,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4917,Gymnastics and boxing equipment,codeset
+49180000,Target and table games and equipment,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4918,Target and table games and equipment,codeset
+49200000,Fitness equipment,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4920,Fitness equipment,codeset
+49220000,Sports equipment and accessories,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4922,Sports equipment and accessories,codeset
+49240000,Recreation and playground and swimming and spa equipment and supplies,family,Goods,49,Sports and Recreational Equipment and Supplies and Accessories,4924,Recreation and playground and swimming and spa equipment and supplies,codeset
+50000000,Food and Beverage Products,segment,Goods,50,Food and Beverage Products,,,
+50110000,Meat and poultry products,family,Goods,50,Food and Beverage Products,5011,Meat and poultry products,codeset
+50120000,Seafood,family,Goods,50,Food and Beverage Products,5012,Seafood,codeset
+50130000,Dairy products and eggs,family,Goods,50,Food and Beverage Products,5013,Dairy products and eggs,codeset
+50170000,Seasonings and preservatives,family,Goods,50,Food and Beverage Products,5017,Seasonings and preservatives,codeset
+50180000,Bread and bakery products,family,Goods,50,Food and Beverage Products,5018,Bread and bakery products,codeset
+50190000,Prepared and preserved foods,family,Goods,50,Food and Beverage Products,5019,Prepared and preserved foods,codeset
+50192700,Packaged combination meals,class,Goods,50,Food and Beverage Products,5019,Prepared and preserved foods,codeset
+50200000,Beverages,family,Goods,50,Food and Beverage Products,5020,Beverages,codeset
+50220000,Cereal and pulse products,family,Goods,50,Food and Beverage Products,5022,Cereal and pulse products,codeset
+51000000,Drugs and Pharmaceutical Products,segment,Goods,51,Drugs and Pharmaceutical Products,,,
+52100000,Floor coverings,family,Goods,52,Domestic Appliances and Supplies and Consumer Electronic Products,5210,Floor coverings,codeset
+52120000,Bedclothes and table and kitchen linen and towels,family,Goods,52,Domestic Appliances and Supplies and Consumer Electronic Products,5212,Bedclothes and table and kitchen linen and towels,codeset
+52130000,Window treatments,family,Goods,52,Domestic Appliances and Supplies and Consumer Electronic Products,5213,Window treatments,codeset
+52140000,Domestic appliances,family,Goods,52,Domestic Appliances and Supplies and Consumer Electronic Products,5214,Domestic appliances,codeset
+52150000,Domestic kitchenware and kitchen supplies,family,Goods,52,Domestic Appliances and Supplies and Consumer Electronic Products,5215,Domestic kitchenware and kitchen supplies,codeset
+52160000,Consumer electronics,family,Goods,52,Domestic Appliances and Supplies and Consumer Electronic Products,5216,Consumer electronics,codeset
+52161500,Audio and visual equipment,class,Goods,52,Domestic Appliances and Supplies and Consumer Electronic Products,5216,Consumer electronics,codeset
+52170000,Domestic wall treatments,family,Goods,52,Domestic Appliances and Supplies and Consumer Electronic Products,5217,Domestic wall treatments,codeset
+53100000,Clothing,family,Goods,53,Apparel and Luggage and Personal Care Products,5310,Clothing,codeset
+53102700,Uniforms,class,Goods,53,Apparel and Luggage and Personal Care Products,5310,Clothing,codeset
+53110000,Footwear,family,Goods,53,Apparel and Luggage and Personal Care Products,5311,Footwear,codeset
+53120000,Luggage and handbags and packs and cases,family,Goods,53,Apparel and Luggage and Personal Care Products,5312,Luggage and handbags and packs and cases,codeset
+53130000,Personal care products,family,Goods,53,Apparel and Luggage and Personal Care Products,5313,Personal care products,codeset
+53140000,Sewing supplies and accessories,family,Goods,53,Apparel and Luggage and Personal Care Products,5314,Sewing supplies and accessories,codeset
+54100000,Jewellery,family,Goods,54,Timepieces and Jewellery and Gemstone Products,5410,Jewellery,codeset
+54110000,Timepieces,family,Goods,54,Timepieces and Jewellery and Gemstone Products,5411,Timepieces,codeset
+54120000,Gemstones,family,Goods,54,Timepieces and Jewellery and Gemstone Products,5412,Gemstones,codeset
+55100000,Printed media,family,Goods,55,Published Products,5510,Printed media,codeset
+55101500,Printed publications,class,Goods,55,Published Products,5510,Printed media,codeset
+55110000,Electronic reference material,family,Goods,55,Published Products,5511,Electronic reference material,codeset
+55120000,Signage and accessories,family,Goods,55,Published Products,5512,Signage and accessories,codeset
+56101500,Furniture,class,Goods,56,Furniture and Furnishings,5610,Furniture,derived from child codes
+56101700,Office furniture,class,Goods,56,Furniture and Furnishings,5610,Furniture,derived from child codes
+56110000,Commercial and industrial furniture,family,Goods,56,Furniture and Furnishings,5611,Commercial and industrial furniture,codeset
+56111500,Workstations and office packages,class,Goods,56,Furniture and Furnishings,5611,Commercial and industrial furniture,codeset
+56112005,Computer support parts or accessories,commodity,Goods,56,Furniture and Furnishings,5611,Commercial and industrial furniture,codeset
+56120000,Classroom and instructional and institutional furniture and fixtures,family,Goods,56,Furniture and Furnishings,5612,Classroom and instructional and institutional furniture and fixtures,codeset
+60100000,Developmental and professional teaching aids and materials and accessories and supplies,family,Goods,60,Musical Instruments and Games and Toys and Arts and Crafts and Educational Equipment and Materials and Accessories and Supplies,6010,Developmental and professional teaching aids and materials and accessories and supplies,codeset
+60110000,Classroom decoratives and supplies,family,Goods,60,Musical Instruments and Games and Toys and Arts and Crafts and Educational Equipment and Materials and Accessories and Supplies,6011,Classroom decoratives and supplies,codeset
+60120000,Arts and crafts equipment and accessories and supplies,family,Goods,60,Musical Instruments and Games and Toys and Arts and Crafts and Educational Equipment and Materials and Accessories and Supplies,6012,Arts and crafts equipment and accessories and supplies,codeset
+60121000,Art,class,Goods,60,Musical Instruments and Games and Toys and Arts and Crafts and Educational Equipment and Materials and Accessories and Supplies,6012,Arts and crafts equipment and accessories and supplies,codeset
+60130000,Musical Instruments and parts and accessories,family,Goods,60,Musical Instruments and Games and Toys and Arts and Crafts and Educational Equipment and Materials and Accessories and Supplies,6013,Musical Instruments and parts and accessories,codeset
+60140000,Toys and games,family,Goods,60,Musical Instruments and Games and Toys and Arts and Crafts and Educational Equipment and Materials and Accessories and Supplies,6014,Toys and games,codeset
+70100000,Fisheries and aquaculture,family,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7010,Fisheries and aquaculture,codeset
+70110000,Horticulture,family,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7011,Horticulture,codeset
+70111705,Cemetery upkeep services,commodity,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7011,Horticulture,codeset
+70120000,Livestock services,family,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7012,Livestock services,codeset
+70130000,Land and soil preparation and management and protection,family,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7013,Land and soil preparation and management and protection,codeset
+70131701,Land use planning,commodity,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7013,Land and soil preparation and management and protection,codeset
+70140000,Crop production and management and protection,family,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7014,Crop production and management and protection,codeset
+70150000,Forestry,family,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7015,Forestry,codeset
+70160000,Wildlife and flora,family,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7016,Wildlife and flora,codeset
+70170000,Water resources development and oversight,family,Services,70,Farming and Fishing and Forestry and Wildlife Contracting Services,7017,Water resources development and oversight,codeset
+71110000,Oil and gas exploration services,family,Services,71,Mining and oil and gas services,7111,Oil and gas exploration services,codeset
+71120000,Well drilling and construction services,family,Services,71,Mining and oil and gas services,7112,Well drilling and construction services,codeset
+71123000,Mining and oil and gas integrated services,class,Services,71,Mining and oil and gas services,7112,Well drilling and construction services,codeset
+71123001,Management and provision of all facilities engineering modification and maintenance services for a site or platform,commodity,Services,71,Mining and oil and gas services,7112,Well drilling and construction services,codeset
+71130000,Oil and gas extraction and production enhancement services,family,Services,71,Mining and oil and gas services,7113,Oil and gas extraction and production enhancement services,codeset
+71140000,Oil and gas restoration and reclamation services,family,Services,71,Mining and oil and gas services,7114,Oil and gas restoration and reclamation services,codeset
+71150000,Oil and gas data management and processing services,family,Services,71,Mining and oil and gas services,7115,Oil and gas data management and processing services,codeset
+71160000,Oil and gas well project management services,family,Services,71,Mining and oil and gas services,7116,Oil and gas well project management services,codeset
+72100000,Building construction and support and maintenance and repair services,family,Services,72,Building and Construction and Maintenance Services,7210,Building construction and support and maintenance and repair services,codeset
+72101500,Building support services,class,Services,72,Building and Construction and Maintenance Services,7210,Building construction and support and maintenance and repair services,codeset
+72102100,Pest control,class,Services,72,Building and Construction and Maintenance Services,7210,Building construction and support and maintenance and repair services,codeset
+72102900,Facility maintenance and repair services,class,Services,72,Building and Construction and Maintenance Services,7210,Building construction and support and maintenance and repair services,codeset
+72120000,Nonresidential building construction services,family,Services,72,Building and Construction and Maintenance Services,7212,Nonresidential building construction services,codeset
+72121500,Industrial plant construction services,class,Services,72,Building and Construction and Maintenance Services,7212,Nonresidential building construction services,codeset
+72151200,Heating and cooling and air conditioning HVAC construction and maintenance services,class,Services,72,Building and Construction and Maintenance Services,7215,Specialised building trade services,derived from child codes
+72151300,Painting and paper hanging services,class,Services,72,Building and Construction and Maintenance Services,7215,Specialised building trade services,derived from child codes
+72151500,Electrical system services,class,Services,72,Building and Construction and Maintenance Services,7215,Specialised building trade services,derived from child codes
+72151900,Masonry and stonework services,class,Services,72,Building and Construction and Maintenance Services,7215,Specialised building trade services,derived from child codes
+72152300,Carpentry services,class,Services,72,Building and Construction and Maintenance Services,7215,Specialised building trade services,derived from child codes
+72152302,Finish carpentry service,commodity,Services,72,Building and Construction and Maintenance Services,7215,Specialised building trade services,derived from child codes
+72152500,Floor laying services,class,Services,72,Building and Construction and Maintenance Services,7215,Specialised building trade services,derived from child codes
+72153600,Interior finishing and furnishing and remodeling services,class,Services,72,Building and Construction and Maintenance Services,7215,Specialised building trade services,derived from child codes
+72153900,Building site preparation services,class,Services,72,Building and Construction and Maintenance Services,7215,Specialised building trade services,derived from child codes
+73100000,Plastic and chemical industries,family,Services,73,Industrial Production and Manufacturing Services,7310,Plastic and chemical industries,codeset
+73110000,Wood and paper industries,family,Services,73,Industrial Production and Manufacturing Services,7311,Wood and paper industries,codeset
+73120000,Metal and mineral industries,family,Services,73,Industrial Production and Manufacturing Services,7312,Metal and mineral industries,codeset
+73130000,Food and beverage industries,family,Services,73,Industrial Production and Manufacturing Services,7313,Food and beverage industries,codeset
+73121805,Concrete or aggregates or stone products manufacturing services,commodity,Services,73,Industrial Production and Manufacturing Services,7312,Metal and mineral industries,codeset
+73140000,Fibres and textiles and fabric industries,family,Services,73,Industrial Production and Manufacturing Services,7314,Fibres and textiles and fabric industries,codeset
+73150000,Manufacturing support services,family,Services,73,Industrial Production and Manufacturing Services,7315,Manufacturing support services,codeset
+73160000,Machinery and transport equipment manufacture,family,Services,73,Industrial Production and Manufacturing Services,7316,Machinery and transport equipment manufacture,codeset
+73170000,Manufacture of electrical goods and precision instruments,family,Services,73,Industrial Production and Manufacturing Services,7317,Manufacture of electrical goods and precision instruments,codeset
+73180000,Machining and processing services,family,Services,73,Industrial Production and Manufacturing Services,7318,Machining and processing services,codeset
+76100000,Decontamination services,family,Services,76,Industrial Cleaning Services,7610,Decontamination services,codeset
+76101602,Asbestos decontamination or removal,commodity,Services,76,Industrial Cleaning Services,7610,Decontamination services,codeset
+76110000,Cleaning and janitorial services,family,Services,76,Industrial Cleaning Services,7611,Cleaning and janitorial services,codeset
+76111500,General building and office cleaning and maintenance services,class,Services,76,Industrial Cleaning Services,7611,Cleaning and janitorial services,codeset
+76111506,Interior plant landscaping services,commodity,Services,76,Industrial Cleaning Services,7611,Cleaning and janitorial services,codeset
+76120000,Refuse disposal and treatment,family,Services,76,Industrial Cleaning Services,7612,Refuse disposal and treatment,codeset
+76121500,Refuse collection and disposal,class,Services,76,Industrial Cleaning Services,7612,Refuse disposal and treatment,codeset
+76121900,Hazardous waste disposal,class,Services,76,Industrial Cleaning Services,7612,Refuse disposal and treatment,codeset
+76130000,Toxic and hazardous waste cleanup,family,Services,76,Industrial Cleaning Services,7613,Toxic and hazardous waste cleanup,codeset
+77100000,Environmental management,family,Services,77,Environmental Services,7710,Environmental management,codeset
+77101600,Environment planning,class,Services,77,Environmental Services,7710,Environmental management,codeset
+77101800,Environmental auditing,class,Services,77,Environmental Services,7710,Environmental management,codeset
+77101707,Ecological advisory services,commodity,Services,77,Environmental Services,7710,Environmental management,codeset
+77110000,Environmental protection,family,Services,77,Environmental Services,7711,Environmental protection,codeset
+77111500,Environmental safety services,class,Services,77,Environmental Services,7711,Environmental protection,codeset
+77120000,Pollution tracking and monitoring and rehabilitation,family,Services,77,Environmental Services,7712,Pollution tracking and monitoring and rehabilitation,codeset
+77130000,Pollutants tracking and monitoring and rehabilitation services,family,Services,77,Environmental Services,7713,Pollutants tracking and monitoring and rehabilitation services,codeset
+78100000,Mail and cargo transport,family,Services,78,Transportation and Storage and Mail Services,7810,Mail and cargo transport,codeset
+78101604,Vehicle transport services,commodity,Services,78,Transportation and Storage and Mail Services,7810,Mail and cargo transport,codeset
+78101804,Relocation services,commodity,Services,78,Transportation and Storage and Mail Services,7810,Mail and cargo transport,codeset
+78102200,Postal and small parcel and courier services,class,Services,78,Transportation and Storage and Mail Services,7810,Mail and cargo transport,codeset
+78102201,National postal delivery services,commodity,Services,78,Transportation and Storage and Mail Services,7810,Mail and cargo transport,codeset
+78102202,Post office box services,commodity,Services,78,Transportation and Storage and Mail Services,7810,Mail and cargo transport,codeset
+78102203,Mailing or mail pick up or delivery services,commodity,Services,78,Transportation and Storage and Mail Services,7810,Mail and cargo transport,codeset
+78110000,Passenger transport,family,Services,78,Transportation and Storage and Mail Services,7811,Passenger transport,codeset
+78111500,Passenger air transportation,class,Services,78,Transportation and Storage and Mail Services,7811,Passenger transport,codeset
+78111600,Passenger railway transportation,class,Services,78,Transportation and Storage and Mail Services,7811,Passenger transport,codeset
+78111700,Passenger marine transportation,class,Services,78,Transportation and Storage and Mail Services,7811,Passenger transport,codeset
+78111800,Passenger road transportation,class,Services,78,Transportation and Storage and Mail Services,7811,Passenger transport,codeset
+78111804,Taxicab services,commodity,Services,78,Transportation and Storage and Mail Services,7811,Passenger transport,codeset
+78111807,Parking fees,commodity,Services,78,Transportation and Storage and Mail Services,7811,Passenger transport,codeset
+78111808,Vehicle rental,commodity,Services,78,Transportation and Storage and Mail Services,7811,Passenger transport,codeset
+78111809,Vehicle leasing,commodity,Services,78,Transportation and Storage and Mail Services,7811,Passenger transport,codeset
+78120000,Material packing and handling,family,Services,78,Transportation and Storage and Mail Services,7812,Material packing and handling,codeset
+78121600,Material handling services,class,Services,78,Transportation and Storage and Mail Services,7812,Material packing and handling,codeset
+78131602,File archive storage,commodity,Services,78,Transportation and Storage and Mail Services,7813,Storage and archiving services,derived from child codes
+78131800,Specialized warehousing and storage,class,Services,78,Transportation and Storage and Mail Services,7813,Storage and archiving services,derived from child codes
+78131804,Document storage services,commodity,Services,78,Transportation and Storage and Mail Services,7813,Storage and archiving services,derived from child codes
+78140000,Transport operations,family,Services,78,Transportation and Storage and Mail Services,7814,Transport operations,codeset
+78141501,Freight forwarders services,commodity,Services,78,Transportation and Storage and Mail Services,7814,Transport operations,codeset
+78181505,Vehicle inspection Services,commodity,Services,78,Transportation and Storage and Mail Services,7818,Transportation repair or maintenance services,codeset
+78181800,Aircraft maintenance and repair services,class,Services,78,Transportation and Storage and Mail Services,7818,Transportation repair or maintenance services,codeset
+78180000,Transportation repair or maintenance services,family,Services,78,Transportation and Storage and Mail Services,7818,Transportation repair or maintenance services,codeset
+78181500,Vehicle maintenance and repair services,class,Services,78,Transportation and Storage and Mail Services,7818,Transportation repair or maintenance services,codeset
+80100000,Management advisory services,family,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101504,Strategic planning consultation services,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101505,Corporate objectives or policy development,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101506,Organisational structure consultation,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101507,Information technology consultation services,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101508,Business intelligence consulting services,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101510,Risk management consultation services,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101600,Project management,class,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101601,Feasibility studies or screening of project ideas,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101603,Economic or financial evaluation of projects,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101604,Project administration or planning,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80161508,Document Destruction Services,commodity,Services,80,Management and Business Professionals and Administrative Services,8016,Business administration services,codeset
+80101706,Professional procurement services,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80101707,Lobbying services,commodity,Services,80,Management and Business Professionals and Administrative Services,8010,Management advisory services,codeset
+80110000,Human resources services,family,Services,80,Management and Business Professionals and Administrative Services,8011,Human resources services,codeset
+80111506,Personnel relocation,commodity,Services,80,Management and Business Professionals and Administrative Services,8011,Human resources services,codeset
+80111509,Job Evaluation Services,commodity,Services,80,Management and Business Professionals and Administrative Services,8011,Human resources services,codeset
+80111600,Temporary personnel services,class,Services,80,Management and Business Professionals and Administrative Services,8011,Human resources services,codeset
+80111617,Architectural services,commodity,Services,80,Management and Business Professionals and Administrative Services,8011,Human resources services,codeset
+80111700,Personnel recruitment,class,Services,80,Management and Business Professionals and Administrative Services,8011,Human resources services,codeset
+80120000,Legal services,family,Services,80,Management and Business Professionals and Administrative Services,8012,Legal services,codeset
+80121600,Business law services,class,Services,80,Management and Business Professionals and Administrative Services,8012,Legal services,codeset
+80121800,Family law services,class,Services,80,Management and Business Professionals and Administrative Services,8012,Legal services,codeset
+80130000,Real estate services,family,Services,80,Management and Business Professionals and Administrative Services,8013,Real estate services,codeset
+80131500,Lease and rental of property or building,class,Services,80,Management and Business Professionals and Administrative Services,8013,Real estate services,codeset
+80131501,Residential rental,commodity,Services,80,Management and Business Professionals and Administrative Services,8013,Real estate services,codeset
+80131503,Land Leases,commodity,Services,80,Management and Business Professionals and Administrative Services,8013,Real estate services,codeset
+80131600,Sale of property and building,class,Services,80,Management and Business Professionals and Administrative Services,8013,Real estate services,codeset
+80131800,Real estate management services,class,Services,80,Management and Business Professionals and Administrative Services,8013,Real estate services,codeset
+80140000,Marketing and distribution,family,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141500,Market research,class,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141600,Sales and business promotion activities,class,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141604,Branding of product naming services,commodity,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141605,Promotional merchandise,commodity,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141607,Events management,commodity,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141609,Sponsorship of event or celebrity,commodity,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141611,Official Gift Services,commodity,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141700,Distribution,class,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141800,Mailing services,class,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80141900,Trade shows and exhibits,class,Services,80,Management and Business Professionals and Administrative Services,8014,Marketing and distribution,codeset
+80150000,Trade policy and services,family,Services,80,Management and Business Professionals and Administrative Services,8015,Trade policy and services,codeset
+80160000,Business administration services,family,Services,80,Management and Business Professionals and Administrative Services,8016,Business administration services,codeset
+80161500,Management support services,class,Services,80,Management and Business Professionals and Administrative Services,8016,Business administration services,codeset
+80161505,Fleet management services,commodity,Services,80,Management and Business Professionals and Administrative Services,8016,Business administration services,codeset
+80161507,Audio visual services,commodity,Services,80,Management and Business Professionals and Administrative Services,8016,Business administration services,codeset
+80161601,Property management services,commodity,Services,80,Management and Business Professionals and Administrative Services,8016,Business administration services,codeset
+80161800,Office Equipment rental or leasing services,class,Services,80,Management and Business Professionals and Administrative Services,8016,Business administration services,codeset
+80170000,Public relations and professional communications services,family,Services,80,Management and Business Professionals and Administrative Services,8017,Public relations and professional communications services,codeset
+80172200,Sponsorships,class,Services,80,Management and Business Professionals and Administrative Services,8017,Public relations and professional communications services,codeset
+81100000,Professional engineering services,family,Services,81,Engineering and Research and Technology Based Services,8110,Professional engineering services,codeset
+81101500,Civil engineering,class,Services,81,Engineering and Research and Technology Based Services,8110,Professional engineering services,codeset
+81101508,Architectural engineering,commodity,Services,81,Engineering and Research and Technology Based Services,8110,Professional engineering services,codeset
+81102300,Aeronautical engineering,class,Services,81,Engineering and Research and Technology Based Services,8110,Professional engineering services,codeset
+81110000,Computer services,family,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81111000,Forensic IT Services,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81112300,Computer hardware maintenance and support,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81111500,Software or hardware engineering,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81111508,Application implementation services,commodity,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81111600,Computer programmers,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81111700,Management information systems MIS,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81111800,System administrators,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81111900,Information retrieval systems,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81112000,Data services,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81112002,Data processing or preparation services,commodity,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81112100,Internet services,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81112200,Software maintenance and support,class,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81112201,Maintenance or support fees,commodity,Services,81,Engineering and Research and Technology Based Services,8111,Computer services,codeset
+81120000,Economics,family,Services,81,Engineering and Research and Technology Based Services,8112,Economics,codeset
+81121500,Economic analysis,class,Services,81,Engineering and Research and Technology Based Services,8112,Economics,codeset
+81130000,Statistics,family,Services,81,Engineering and Research and Technology Based Services,8113,Statistics,codeset
+81140000,Manufacturing technologies,family,Services,81,Engineering and Research and Technology Based Services,8114,Manufacturing technologies,codeset
+81141801,Safety or risk analysis,commodity,Services,81,Engineering and Research and Technology Based Services,8114,Manufacturing technologies,codeset
+81150000,Earth science services,family,Services,81,Engineering and Research and Technology Based Services,8115,Earth science services,codeset
+81151601,Mapping,commodity,Services,81,Engineering and Research and Technology Based Services,8115,Earth science services,codeset
+81162000,Software as a Service (SaaS – Cloud),class,Services,81,Engineering and Research and Technology Based Services,8116,"Cloud services (SaaS, PaaS, IaaS)",derived from child codes
+81162100,Platform as a Service (PaaS – Cloud),class,Services,81,Engineering and Research and Technology Based Services,8116,"Cloud services (SaaS, PaaS, IaaS)",derived from child codes
+81162103,Platform software as a service,commodity,Services,81,Engineering and Research and Technology Based Services,8116,"Cloud services (SaaS, PaaS, IaaS)",derived from child codes
+81162200,Infrastructure as a Service (IaaS – Cloud),class,Services,81,Engineering and Research and Technology Based Services,8116,"Cloud services (SaaS, PaaS, IaaS)",derived from child codes
+82100000,Advertising,family,Services,82,Editorial and Design and Graphic and Fine Art Services,8210,Advertising,codeset
+82101504,Newspaper advertising,commodity,Services,82,Editorial and Design and Graphic and Fine Art Services,8210,Advertising,codeset
+82101600,Broadcast advertising,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8210,Advertising,codeset
+82101601,Radio advertising,commodity,Services,82,Editorial and Design and Graphic and Fine Art Services,8210,Advertising,codeset
+82101602,Television advertising,commodity,Services,82,Editorial and Design and Graphic and Fine Art Services,8210,Advertising,codeset
+82111500,Technical writing,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8211,"Writing, translation and publicity services",derived from child codes
+82111603,Court reporting services,commodity,Services,82,Editorial and Design and Graphic and Fine Art Services,8211,"Writing, translation and publicity services",derived from child codes
+82111604,Transcribing services,commodity,Services,82,Editorial and Design and Graphic and Fine Art Services,8211,"Writing, translation and publicity services",derived from child codes
+82111800,Editorial and Support Services,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8211,"Writing, translation and publicity services",derived from child codes
+82111804,Written translation services,commodity,Services,82,Editorial and Design and Graphic and Fine Art Services,8211,"Writing, translation and publicity services",derived from child codes
+82111900,News and publicity services,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8211,"Writing, translation and publicity services",derived from child codes
+82120000,Reproduction services,family,Services,82,Editorial and Design and Graphic and Fine Art Services,8212,Reproduction services,codeset
+82121500,Printing,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8212,Reproduction services,codeset
+82121505,Promotional or advertising printing,commodity,Services,82,Editorial and Design and Graphic and Fine Art Services,8212,Reproduction services,codeset
+82121506,Publication printing,commodity,Services,82,Editorial and Design and Graphic and Fine Art Services,8212,Reproduction services,codeset
+82121600,Engraving,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8212,Reproduction services,codeset
+82121700,Photocopying,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8212,Reproduction services,codeset
+82121800,Publishing,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8212,Reproduction services,codeset
+82121900,Bookbinding,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8212,Reproduction services,codeset
+82130000,Photographic services,family,Services,82,Editorial and Design and Graphic and Fine Art Services,8213,Photographic services,codeset
+82140000,Graphic design,family,Services,82,Editorial and Design and Graphic and Fine Art Services,8214,Graphic design,codeset
+82141501,Layout or graphics editing services,commodity,Services,82,Editorial and Design and Graphic and Fine Art Services,8214,Graphic design,codeset
+82150000,Professional artists and performers,family,Services,82,Editorial and Design and Graphic and Fine Art Services,8215,Professional artists and performers,codeset
+82151500,Visual art services,class,Services,82,Editorial and Design and Graphic and Fine Art Services,8215,Professional artists and performers,codeset
+83100000,Utilities,family,Services,83,Public Utilities and Public Sector Related Services,8310,Utilities,codeset
+83101500,Water and sewer utilities,class,Services,83,Public Utilities and Public Sector Related Services,8310,Utilities,codeset
+83101506,Water treatment services,commodity,Services,83,Public Utilities and Public Sector Related Services,8310,Utilities,codeset
+83101600,Oil and gas utilities,class,Services,83,Public Utilities and Public Sector Related Services,8310,Utilities,codeset
+83101800,Electric utilities,class,Services,83,Public Utilities and Public Sector Related Services,8310,Utilities,codeset
+83101900,Energy conservation,class,Services,83,Public Utilities and Public Sector Related Services,8310,Utilities,codeset
+83110000,Telecommunications media services,family,Services,83,Public Utilities and Public Sector Related Services,8311,Telecommunications media services,codeset
+83111500,Local and long distance telephone communications,class,Services,83,Public Utilities and Public Sector Related Services,8311,Telecommunications media services,codeset
+83111600,Mobile communications services,class,Services,83,Public Utilities and Public Sector Related Services,8311,Telecommunications media services,codeset
+83112200,Enhanced telecommunications services,class,Services,83,Public Utilities and Public Sector Related Services,8311,Telecommunications media services,codeset
+83120000,Information services,family,Services,83,Public Utilities and Public Sector Related Services,8312,Information services,codeset
+83121604,Online database information retrieval systems,commodity,Services,83,Public Utilities and Public Sector Related Services,8312,Information services,codeset
+84100000,Development finance,family,Services,84,Financial and Insurance Services,8410,Development finance,codeset
+84101600,Aid financing,class,Services,84,Financial and Insurance Services,8410,Development finance,codeset
+84101700,Debt management,class,Services,84,Financial and Insurance Services,8410,Development finance,codeset
+84111500,Accounting services,class,Services,84,Financial and Insurance Services,8411,Accounting and audit services,derived from child codes
+84111600,Audit services,class,Services,84,Financial and Insurance Services,8411,Accounting and audit services,derived from child codes
+84111603,Internal audits,commodity,Services,84,Financial and Insurance Services,8411,Accounting and audit services,derived from child codes
+84120000,Banking and investment,family,Services,84,Financial and Insurance Services,8412,Banking and investment,codeset
+84130000,Insurance and retirement services,family,Services,84,Financial and Insurance Services,8413,Insurance and retirement services,codeset
+84131500,Insurance services for structures and property and possessions,class,Services,84,Financial and Insurance Services,8413,Insurance and retirement services,codeset
+84131800,Retirement Funds,class,Services,84,Financial and Insurance Services,8413,Insurance and retirement services,codeset
+84140000,Credit agencies,family,Services,84,Financial and Insurance Services,8414,Credit agencies,codeset
+84141602,Credit Card Service Providers,commodity,Services,84,Financial and Insurance Services,8414,Credit agencies,codeset
+85100000,Comprehensive health services,family,Services,85,Healthcare Services,8510,Comprehensive health services,codeset
+85101600,Healthcare provider support persons,class,Services,85,Healthcare Services,8510,Comprehensive health services,codeset
+85101700,Health administration services,class,Services,85,Healthcare Services,8510,Comprehensive health services,codeset
+85110000,Disease prevention and control,family,Services,85,Healthcare Services,8511,Disease prevention and control,codeset
+85120000,Medical practice,family,Services,85,Healthcare Services,8512,Medical practice,codeset
+85121608,Psychologists services,commodity,Services,85,Healthcare Services,8512,Medical practice,codeset
+85122100,Rehabilitation services,class,Services,85,Healthcare Services,8512,Medical practice,codeset
+85122200,Individual health screening & assessment services,class,Services,85,Healthcare Services,8512,Medical practice,codeset
+85130000,Medical science research and experimentation,family,Services,85,Healthcare Services,8513,Medical science research and experimentation,codeset
+85140000,Alternative and holistic medicine,family,Services,85,Healthcare Services,8514,Alternative and holistic medicine,codeset
+85150000,Food and nutrition services,family,Services,85,Healthcare Services,8515,Food and nutrition services,codeset
+85171500,Funeral and associated services,class,Services,85,Healthcare Services,8517,Funeral and associated services,derived from child codes
+86000000,Education and Training Services,segment,Services,86,Education and Training Services,,,
+86101803,Vocational rehabilitation services,commodity,Services,86,Education and Training Services,8610,Vocational rehabilitation services,derived from child codes
+86141704,Library or documentation services,commodity,Services,86,Education and Training Services,8614,Library or documentation services,derived from child codes
+90100000,Restaurants and catering,family,Services,90,Travel and Food and Lodging and Entertainment Services,9010,Restaurants and catering,codeset
+90101600,Banquet and catering services,class,Services,90,Travel and Food and Lodging and Entertainment Services,9010,Restaurants and catering,codeset
+90101700,Cafeteria services,class,Services,90,Travel and Food and Lodging and Entertainment Services,9010,Restaurants and catering,codeset
+90110000,Hotels and lodging and meeting facilities,family,Services,90,Travel and Food and Lodging and Entertainment Services,9011,Hotels and lodging and meeting facilities,codeset
+90111500,Hotels and motels and inns,class,Services,90,Travel and Food and Lodging and Entertainment Services,9011,Hotels and lodging and meeting facilities,codeset
+90111600,Meeting facilities,class,Services,90,Travel and Food and Lodging and Entertainment Services,9011,Hotels and lodging and meeting facilities,codeset
+90111601,Conference centres,commodity,Services,90,Travel and Food and Lodging and Entertainment Services,9011,Hotels and lodging and meeting facilities,codeset
+90111603,Meeting or banquet rooms,commodity,Services,90,Travel and Food and Lodging and Entertainment Services,9011,Hotels and lodging and meeting facilities,codeset
+90111800,Hotel rooms,class,Services,90,Travel and Food and Lodging and Entertainment Services,9011,Hotels and lodging and meeting facilities,codeset
+90120000,Travel facilitation,family,Services,90,Travel and Food and Lodging and Entertainment Services,9012,Travel facilitation,codeset
+90121500,Travel agents,class,Services,90,Travel and Food and Lodging and Entertainment Services,9012,Travel facilitation,codeset
+90121702,Interpreters,commodity,Services,90,Travel and Food and Lodging and Entertainment Services,9012,Travel facilitation,codeset
+90130000,Performing arts,family,Services,90,Travel and Food and Lodging and Entertainment Services,9013,Performing arts,codeset
+90140000,Commercial sports,family,Services,90,Travel and Food and Lodging and Entertainment Services,9014,Commercial sports,codeset
+90141503,Exhibitions,commodity,Services,90,Travel and Food and Lodging and Entertainment Services,9014,Commercial sports,codeset
+90150000,Entertainment services,family,Services,90,Travel and Food and Lodging and Entertainment Services,9015,Entertainment services,codeset
+91100000,Personal appearance,family,Services,91,Personal and Domestic Services,9110,Personal appearance,codeset
+91110000,Domestic and personal assistance,family,Services,91,Personal and Domestic Services,9111,Domestic and personal assistance,codeset
+92100000,Public order and safety,family,Services,92,National Defence and Public Order and Security and Safety Services,9210,Public order and safety,codeset
+92101500,Police services,class,Services,92,National Defence and Public Order and Security and Safety Services,9210,Public order and safety,codeset
+92110000,Military services and national defence,family,Services,92,National Defence and Public Order and Security and Safety Services,9211,Military services and national defence,codeset
+92111700,Military science and research,class,Services,92,National Defence and Public Order and Security and Safety Services,9211,Military services and national defence,codeset
+92120000,Security and personal safety,family,Services,92,National Defence and Public Order and Security and Safety Services,9212,Security and personal safety,codeset
+92121504,Security guard services,commodity,Services,92,National Defence and Public Order and Security and Safety Services,9212,Security and personal safety,codeset
+93100000,Political systems and institutions,family,Services,93,Politics and Civic Affairs Services,9310,Political systems and institutions,codeset
+93110000,Socio political conditions,family,Services,93,Politics and Civic Affairs Services,9311,Socio political conditions,codeset
+93120000,International relations,family,Services,93,Politics and Civic Affairs Services,9312,International relations,codeset
+93121502,Consular services,commodity,Services,93,Politics and Civic Affairs Services,9312,International relations,codeset
+93130000,Humanitarian aid and relief,family,Services,93,Politics and Civic Affairs Services,9313,Humanitarian aid and relief,codeset
+93131500,Refugee programs,class,Services,93,Politics and Civic Affairs Services,9313,Humanitarian aid and relief,codeset
+93131700,Health Programs,class,Services,93,Politics and Civic Affairs Services,9313,Humanitarian aid and relief,codeset
+93131701,Anti tobacco campaigns,commodity,Services,93,Politics and Civic Affairs Services,9313,Humanitarian aid and relief,codeset
+93131703,Research programs,commodity,Services,93,Politics and Civic Affairs Services,9313,Humanitarian aid and relief,codeset
+93131705,Drug abuse prevention or control programs,commodity,Services,93,Politics and Civic Affairs Services,9313,Humanitarian aid and relief,codeset
+93131800,Disaster preparedness and relief,class,Services,93,Politics and Civic Affairs Services,9313,Humanitarian aid and relief,codeset
+93140000,Community and social services,family,Services,93,Politics and Civic Affairs Services,9314,Community and social services,codeset
+93141707,Cultural heritage preservation or promotion services,commodity,Services,93,Politics and Civic Affairs Services,9314,Community and social services,codeset
+93141805,Employment services,commodity,Services,93,Politics and Civic Affairs Services,9314,Community and social services,codeset
+93141808,Occupational health or safety services,commodity,Services,93,Politics and Civic Affairs Services,9314,Community and social services,codeset
+93150000,Public administration and finance services,family,Services,93,Politics and Civic Affairs Services,9315,Public administration and finance services,codeset
+93151501,Public enterprises management or financial services,commodity,Services,93,Politics and Civic Affairs Services,9315,Public administration and finance services,codeset
+93151505,Administrative agencies services,commodity,Services,93,Politics and Civic Affairs Services,9315,Public administration and finance services,codeset
+93151510,Administrative fees or tax collection services,commodity,Services,93,Politics and Civic Affairs Services,9315,Public administration and finance services,codeset
+93151515,National planning services,commodity,Services,93,Politics and Civic Affairs Services,9315,Public administration and finance services,codeset
+93160000,Taxation,family,Services,93,Politics and Civic Affairs Services,9316,Taxation,codeset
+93161602,Land tax,commodity,Services,93,Politics and Civic Affairs Services,9316,Taxation,codeset
+93170000,Trade policy and regulation,family,Services,93,Politics and Civic Affairs Services,9317,Trade policy and regulation,codeset
+94100000,Work related organisations,family,Services,94,Organisations and Clubs,9410,Work related organisations,codeset
+94101600,Professional associations,class,Services,94,Organisations and Clubs,9410,Work related organisations,codeset
+94110000,Religious organisations,family,Services,94,Organisations and Clubs,9411,Religious organisations,codeset
+94120000,Clubs,family,Services,94,Organisations and Clubs,9412,Clubs,codeset
+94130000,Civic organisations and associations and movements,family,Services,94,Organisations and Clubs,9413,Civic organisations and associations and movements,codeset
+95120000,Permanent buildings and structures,family,Goods,95,Land and Buildings and Structures and Throughfares,9512,Permanent buildings and structures,codeset
+95121611,Airport building,commodity,Goods,95,Land and Buildings and Structures and Throughfares,9512,Permanent buildings and structures,codeset
+95121612,Airport control tower,commodity,Goods,95,Land and Buildings and Structures and Throughfares,9512,Permanent buildings and structures,codeset
+95121613,Airfield,commodity,Goods,95,Land and Buildings and Structures and Throughfares,9512,Permanent buildings and structures,codeset
+95121614,Runway,commodity,Goods,95,Land and Buildings and Structures and Throughfares,9512,Permanent buildings and structures,codeset
+95122100,Accommodation buildings and structures,class,Goods,95,Land and Buildings and Structures and Throughfares,9512,Permanent buildings and structures,codeset
+95122403,Warehouse store,commodity,Goods,95,Land and Buildings and Structures and Throughfares,9512,Permanent buildings and structures,codeset
+95130000,Portable buildings and structures,family,Goods,95,Land and Buildings and Structures and Throughfares,9513,Portable buildings and structures,codeset
+95140000,Prefabricated buildings and structures,family,Goods,95,Land and Buildings and Structures and Throughfares,9514,Prefabricated buildings and structures,codeset
