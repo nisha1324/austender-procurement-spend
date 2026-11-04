@@ -1,0 +1,32 @@
+kind,code,meaning,notices,current_value
+reason,TR,10.3.d.iii. Supply by particular business: due to an absence of competition for technical reasons.,2105,2386799589.84
+reason,AD,"10.3.e. Additional deliveries by original supplier intended as replacement parts, extensions, or continuation for existing goods or services for compatibility.",2035,4328574744.99
+reason,ER,10.3.d.ii. Supply by particular business: with no reasonable alternative or substitute: to protect exclusive rights or proprietary information.,396,424078922.57
+reason,EV,Estimated value was under the procurement threshold.,210,37026073.52
+reason,EU,10.3.b. Extreme urgency or events unforeseen.,100,405553524.95
+reason,CT,Valued below the construction threshold.,96,107952008.16
+reason,VM,10.3.a.i. No submissions or value for money submissions received.,86,77495611.9
+reason,CP,10.3.a.iii. No tenderers satisfied conditions for participation.,72,16907845.0
+reason,PT,"10.3.g. Prototype intended for limited trial or developed at the entity's request for a research, experiment, study, or original development contract.",69,87449073.73
+reason,AC,"10.3.c. Advantageous conditions arising only in the very short term, not routine procurements.",34,91002723.16
+reason,WA,10.3.d.i. Supply by a particular business: for works of art.,17,5104290.51
+reason,CM,10.3.f. In a commodity market.,16,21357746.36
+reason,CF,10.3.a.ii. No submissions met minimum content and format requirements.,10,5313090.83
+reason,DC,10.3.h. Awarded to the winner of a design contest independently judged and run consistent with the CPRs.,1,1009470.0
+exemption,AM,Paragraph 2.6 was applied in some part.,891,8456987061.49
+exemption,GE,"App A: 2. From another Commonwealth, state, territory or local government entity.",523,1746742795.06
+exemption,OA,App A: 8. Procuring outside Australian territory for consumption outside Australian territory.,465,328678173.68
+exemption,LP,App A: 1. Leasing of immovable property or any associated rights.,458,2005141936.83
+exemption,IS,App A: 16. SME with at least 50 percent Indigenous ownership.,334,832036991.38
+exemption,PC,"APP A: 17. SME Procurements up to $500,000.",330,78843804.41
+exemption,RD,App A: 6. Research and development services (but not inputs).,280,324075072.6
+exemption,DI,"App A: 13. By, or on behalf of select Defence intelligence agencies.",270,667637615.98
+exemption,LH,App A: 14. Contracts for labour hire.,196,82006040.55
+exemption,GA,App A: 12. Government advertising services.,129,87728216.77
+exemption,EN,App A: 7. Expert or neutral person (including counsel or barristers).,111,22143614.39
+exemption,FA,App A: 5. Direct purpose of providing foreign assistance.,110,174496376.56
+exemption,FD,"App A: 9. Fiscal agency, depository and other associated services.",16,25402676.43
+exemption,DE,App A: 15. From a business that primarily exists to provide the services of persons with a disability.,14,2743200.89
+exemption,IG,"App A: 3. Funded by international grants, loans or other assistance.",14,6073362.88
+exemption,GS,App A: 4. Funded by grants and sponsorship payments from non-Commonwealth entities.,3,505531.6
+exemption,DC,Did not comply with the CPRs.,2,272788.78
