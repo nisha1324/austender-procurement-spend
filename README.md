@@ -1,6 +1,6 @@
 # Australian Government procurement spend analytics (AusTender)
 
-> **Status: in progress (Part 1 of 5 done: source and profile).** The parts still to come are listed in the [roadmap](#roadmap).
+> **Status: in progress (Parts 1 and 2 of 5 done: source profile and spend cube).** The parts still to come are listed in the [roadmap](#roadmap).
 
 The Australian Government publishes a notice for every contract worth $10,000 or more on
 AusTender. That makes it one of the few places where you can see how a large organisation really
@@ -80,10 +80,71 @@ the supplier key, cancelled notices out, the $80k line), but they have to be dec
 first chart, which is what this part does. Two questions stay open for the agencies themselves:
 why so many contracts grow after award, and why one notice in seven is published late.
 
+## Part 2: where the money goes, and who it goes to
+
+Full results: [`results/SPEND_CUBE.md`](results/SPEND_CUBE.md) (generated), plus BI-ready CSVs in
+[`results/`](results/): the agency × category cube, concentration by category, suppliers and agencies.
+
+Category names come from the government's own **AusTender Customised UNSPSC Codeset** (data.gov.au,
+CC BY 3.0 AU), which every one of the 537 codes on these notices matches. Following Part 1's rules,
+this part counts the **58,192 active notices**, each at its latest value: **$62.21bn of committed
+contract value** ($48.60bn at award). Committed value is what contracts are worth over their life,
+not what was paid this year.
+
+**Where it goes.** Services take 75.9% of the money. One segment, *Management and Business
+Professionals and Administrative Services*, holds 26.8% on its own. Defence holds 43.5% of all
+value and 86.1% of building and construction ($9.75bn), so every concentration result is shown with
+and without Defence.
+
+![Committed value by UNSPSC segment, Defence and other agencies](results/charts/03_spend_by_segment.png)
+
+**Who it goes to.** 16,242 suppliers, but **58 of them hold half the committed value** and 391
+hold 80%. At the other end, 10,103 suppliers (62.2%) won exactly one notice. Big totals are often
+a single contract: Ventia, the largest supplier ($3.44bn), has 98.5% of it in one notice.
+
+**Is any category dependent on one supplier?** For each of the 42 large categories (UNSPSC
+families of $100m or more with at least 20 notices; 89.7% of value), the analysis measures the top
+supplier's share and the Herfindahl-Hirschman Index (HHI). One year of notices is lumpy, so each
+category is measured again **without its single largest notice**. That separates "one big
+contract" from concentration that goes beyond it:
+
+| Large categories, all agencies | Categories | Committed value |
+|---|---:|---:|
+| Low concentration (HHI under 1,500) | 25 | $31.41bn |
+| Moderate (1,500 to 2,500) | 7 | $17.47bn |
+| High, but only because of one contract | 4 | $2.73bn |
+| High beyond one contract | 6 | $4.17bn |
+
+![Top supplier share and its single largest notice in the 20 largest categories](results/charts/04_family_concentration.png)
+
+Only $4.17bn (7.5% of large-category value) sits in categories concentrated beyond one contract.
+They are fuels (one supplier, 81.9% from 28 notices), advertising (one supplier, 69.1% from 284
+notices), insurance (Comcare, the government's workers' compensation insurer, 42.7%), light weapons
+and ammunition, and two categories led by one Defence electronics supplier (CEA Technologies: 79.6%
+and 62.7%). Without Defence, 11 of 29 large categories are highly concentrated,
+6 of them because of one contract (e.g. a $2.34bn Home Affairs detention services contract, 60.6%
+of non-Defence business administration).
+
+**The opposite pattern is bigger.** 12 large categories worth $19.11bn are bought by 20 or more
+agencies from a long tail of suppliers, where it takes 30 or more suppliers to reach 80% of the
+value. Human resources services (labour hire): 108 agencies, 962 suppliers, 138 needed for 80%.
+Computer services: 112 agencies, 1,517 suppliers.
+
+**So what for the business?** For a procurement lead, the headline isn't supplier dependence.
+The concentrated categories are few, small and mostly explainable (one large contract, a statutory
+insurer, or what looks like a central arrangement), so the job there is to confirm each one is
+deliberate and to manage the big contracts well. The larger lever is fragmentation: $19.11bn of
+common services, such as labour hire and IT, bought separately by dozens of agencies from hundreds of
+suppliers. That is where pooled demand and whole-of-government panels pay off. The API has no
+panel flag, so the first step is to check how much of it already goes through panels. Two more
+lessons for anyone building a spend dashboard: measure concentration with and without the largest
+contract, or one award will look like a monopoly; and keep the 4,672 segment-only notices ($2.39bn)
+visible rather than dropping them, since Part 4 tries to place them.
+
 ## Roadmap
 
 - [x] **Part 1: source and profile.** Download, snapshot, the traps in the data and the rules they set.
-- [ ] **Part 2: spend cube.** Category names for UNSPSC codes, spend by agency, category and supplier, and supplier concentration by category.
+- [x] **Part 2: spend cube.** Category names from the AusTender UNSPSC codeset, spend by agency, category and supplier, supplier concentration by category (with and without Defence, and without the largest contract), and a BI-ready cube.
 - [ ] **Part 3: competition and compliance.** Limited tenders from $80k by reason and agency, value clustering under thresholds, late publication, and contracts that grew most after award.
 - [ ] **Part 4: LLM-assisted categoriser.** Sorting coarsely coded notices into spend categories from their descriptions, with an offline baseline, a Claude backend (needs a key) and a hand-labelled check set.
 - [ ] **Part 5: write-up.** CI, TL;DR, ranked recommendations, limitations.
@@ -100,15 +161,18 @@ python -m scripts.build_snapshot
 
 python -m scripts.check_amendment_values   # live API cross-check (network)
 python -m scripts.profile_releases         # Part 1 report and charts, offline
+python -m scripts.build_categories         # optional: rebuild the UNSPSC lookup (downloads 80 KB)
+python -m scripts.spend_cube               # Part 2 report, charts and CSVs, offline
 pytest
 ```
 
 ## Project structure
 
 ```
-data/            releases.csv.gz (the snapshot), SNAPSHOT.json; raw/ is not committed
-scripts/         download_data.py, build_snapshot.py, check_amendment_values.py, profile_releases.py
-sql/             00_load.sql (typed views), profile.sql (Part 1 checks)
-results/         SOURCE_PROFILE.md, AMENDMENT_CHECK.md, CSVs, charts/
+data/            releases.csv.gz (the snapshot), SNAPSHOT.json, unspsc_categories.csv; raw/ is not committed
+scripts/         download_data.py, build_snapshot.py, check_amendment_values.py, profile_releases.py,
+                 build_categories.py, spend_cube.py
+sql/             00_load.sql (typed views), profile.sql (Part 1), 01_spend.sql + spend.sql (Part 2)
+results/         SOURCE_PROFILE.md, AMENDMENT_CHECK.md, SPEND_CUBE.md, CSVs, charts/
 tests/           unit tests on hand-written releases, plus checks on the committed snapshot
 ```
