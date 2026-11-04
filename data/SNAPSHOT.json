@@ -1,0 +1,21 @@
+{
+  "day_files": 365,
+  "first_day": "2024-07-01",
+  "last_day": "2025-06-30",
+  "api_pages": 1292,
+  "licences": [
+    "https://creativecommons.org/licenses/by/3.0/au/"
+  ],
+  "fetched_from": "2026-11-04T03:33:32Z",
+  "fetched_to": "2026-11-04T03:46:56Z",
+  "source": "AusTender OCDS API, findByDates/contractPublished (Department of Finance)",
+  "api": "https://api.tenders.gov.au/ocds/",
+  "raw_releases": 81988,
+  "boundary_repeats_dropped": 11,
+  "releases": 81977,
+  "contract_notices": 59464,
+  "amendments": 22513,
+  "file": "releases.csv.gz",
+  "sha256": "0906b0d3279f45223c688a0d18dde20e0a0bd50d60cb3bd01320fa609354f40f",
+  "built_with": "pandas 2.3.3"
+}
