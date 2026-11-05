@@ -49,6 +49,8 @@ def r(release, tmp_path):
         nt(release, "CN5", 120000, n=1, method="limited"),                     # ... grew past it
         nt(release, "CN6", 10000),                                             # placeholder ...
         nt(release, "CN6", 200000, n=1),                                       # ... amended twentyfold
+        nt(release, "CN13", 9000),                                             # under $10k: not a placeholder
+        nt(release, "CN13", 12000, n=1),
         # Split group: same agency, supplier, description and start, 19 days apart, $100k together.
         nt(release, "CN7", 50000, method="limited", abn="22222222222", desc="Cleaning"),
         nt(release, "CN8", 50000, method="limited", abn="22222222222", desc="Cleaning",
@@ -77,7 +79,7 @@ def r(release, tmp_path):
 
 def test_routes_and_the_80k_line_use_the_value_at_award(r):
     t = r["totals"].iloc[0]
-    assert t.notices == 23  # CN1 to CN12, ten batch notices, CN30
+    assert t.notices == 24  # CN1 to CN13, ten batch notices, CN30
     assert t.notices_80k == 4 and t.limited_80k == 3  # CN5 is $70k at award, CN4 $90k
     assert t.no_code_80k == 1 and t.no_code_80k_amended_below == 1
     routes = r["routes"].set_index("route").notices.to_dict()
@@ -94,8 +96,8 @@ def test_crossed_threshold_and_placeholders(r):
     ph = r["placeholders"]
     assert len(ph) == 1 and ph.notices.iloc[0] == 1 and ph.tenfold.iloc[0] == 1
     g = r["growth_totals"].iloc[0]
-    assert g.grew == 2 and g.tenfold == 1
-    assert float(g.net_added) == (120000 - 70000) + (200000 - 10000) - (90000 - 50000)
+    assert g.grew == 3 and g.tenfold == 1
+    assert float(g.net_added) == (120000 - 70000) + (200000 - 10000) + (12000 - 9000) - (90000 - 50000)
 
 
 def test_split_groups(r):
