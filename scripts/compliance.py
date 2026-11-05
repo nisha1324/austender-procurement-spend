@@ -202,7 +202,8 @@ def write_report(r: dict[str, pd.DataFrame], snap: dict) -> str:
         "",
         f"The two largest 10.3 conditions are `AD` (additional deliveries from the original supplier, "
         f"{money(codes[codes.code == 'AD'].award_value.iloc[0])}) and `TR` (only one supplier for technical "
-        f"reasons, {money(codes[codes.code == 'TR'].award_value.iloc[0])}): extensions and sole sources. "
+        f"reasons, {money(codes[codes.code == 'TR'].award_value.iloc[0])}): extensions and sole sources, "
+        f"{n(t.ad_tr_80k)} notices and {money(t.ad_tr_award_value_80k)} together. "
         f"`EU` (extreme urgency) is small at award ({money(eu.award_value)}) but grew to "
         f"{money(codes[codes.code == 'EU'].current_value.iloc[0])}; see section 4.",
         "",

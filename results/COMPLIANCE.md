@@ -49,7 +49,7 @@ By condition or exemption (limited tenders from $80k, value at award):
 | 10.3 condition | EU | 10.3.b. Extreme urgency or events unforeseen. | 94 | $78.7m | $403.7m | 22 | 55.7% |
 | 10.3 condition | CT | Valued below the construction threshold. | 87 | $71.8m | $95.7m | 22 | 21.9% |
 
-The two largest 10.3 conditions are `AD` (additional deliveries from the original supplier, $4.01bn) and `TR` (only one supplier for technical reasons, $1.79bn): extensions and sole sources. `EU` (extreme urgency) is small at award ($78.7m) but grew to $403.7m; see section 4.
+The two largest 10.3 conditions are `AD` (additional deliveries from the original supplier, $4.01bn) and `TR` (only one supplier for technical reasons, $1.79bn): extensions and sole sources, 3,792 notices and $5.80bn together. `EU` (extreme urgency) is small at award ($78.7m) but grew to $403.7m; see section 4.
 
 Agencies with at least 100 notices from $80k, by the share of that value bought by limited tender:
 

@@ -18,7 +18,9 @@ SELECT count(*)                                                     AS notices,
                                                                     AS limited_award_value_80k_ex_defence,
        count(*) FILTER (award_80k_plus AND route LIKE '5.%')        AS no_code_80k,
        count(*) FILTER (award_80k_plus AND route LIKE '5.%' AND current_value < 80000 AND n_amendments > 0)
-                                                                    AS no_code_80k_amended_below
+                                                                    AS no_code_80k_amended_below,
+       count(*) FILTER (award_80k_plus AND limited_reason_code IN ('AD', 'TR')) AS ad_tr_80k,
+       sum(award_value) FILTER (award_80k_plus AND limited_reason_code IN ('AD', 'TR')) AS ad_tr_award_value_80k
 FROM comp;
 
 -- name: routes
