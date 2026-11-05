@@ -1,6 +1,6 @@
 # Australian Government procurement spend analytics (AusTender)
 
-> **Status: in progress (Parts 1 and 2 of 5 done: source profile and spend cube).** The parts still to come are listed in the [roadmap](#roadmap).
+> **Status: in progress (Parts 1 to 3 of 5 done: source profile, spend cube, competition and compliance).** The parts still to come are listed in the [roadmap](#roadmap).
 
 The Australian Government publishes a notice for every contract worth $10,000 or more on
 AusTender. That makes it one of the few places where you can see how a large organisation really
@@ -67,9 +67,10 @@ Other things worth knowing before building on this data:
   confidentiality flag, amendments almost never change the dates (so term extensions can't be
   seen), and agency branch and division sit on the supplier record next to the officer's
   contact details. The snapshot keeps branch and division and drops the personal details.
-- **Late publication is common.** The rules ask for a notice within 42 days of the contract
-  starting; 8,737 notices (14.7%) came later. Part 3 looks at which agencies, and whether some
-  of it is backdated starts.
+- **Late publication is common.** The rules ask for a contract to be reported within 42 days of
+  entering into it. The API has no signing date, so the start date stands in:
+  8,737 notices (14.7%) were published more than 42 days after it. Part 3 finds that half the late notices
+  come in catch-up batches.
 
 ![Value at first publication and after amendments, by month](results/charts/02_award_vs_current.png)
 
@@ -141,11 +142,73 @@ lessons for anyone building a spend dashboard: measure concentration with and wi
 contract, or one award will look like a monopoly; and keep the 4,672 segment-only notices ($2.39bn)
 visible rather than dropping them, since Part 4 tries to place them.
 
+## Part 3: competition and compliance
+
+Full results: [`results/COMPLIANCE.md`](results/COMPLIANCE.md) (generated), plus review lists in
+[`results/`](results/): limited tenders and late publication by agency, and the 200 contracts that grew most.
+
+The rules are the Commonwealth Procurement Rules of 1 July 2024. From $80k (GST inclusive; $400k
+for prescribed corporate entities, $7.5m for construction) an agency has to approach the open market
+unless a paragraph 10.3 condition or an Appendix A exemption applies, and every contract of $10k or more has
+to be reported within 42 days of entering into it. The API has no expected value, signing date or entity
+type, so the value at award, the contract start date and the $80k line stand in for them. The same
+58,192 active notices as Part 2.
+
+**Limited tenders almost always give a reason.** 8,687 of the 23,860 notices worth $80k or more at
+award (36.4%) were limited tenders, holding 39.4% of that value; without Defence, 26.2% and 25.0%.
+4,755 cite a 10.3 condition and 3,878 an exemption. Only 54 give neither, and all 54 have since been
+amended below $80k, which looks like a value keyed wrongly at award. The biggest routes are Defence's
+own exemption (`AM`, $6.63bn at award, 95.3% Defence), then extensions with the original supplier
+(`AD`) and sole sources for technical reasons (`TR`): 3,792 notices and $5.80bn together.
+
+**Values pile up just under $80k.** The last $1,000 before the threshold holds 345 notices, 2.31
+times the mean of its neighbouring bins. At the other 13 round amounts from $30k to $160k the ratio
+is 0.82 to 1.52, and of all 170 $1,000 bins from $25k to $195k (leaving out whole-thousand values),
+the one under $80k is furthest above its neighbours. That is about 196 more notices than expected.
+But the extra notices aren't more often limited tenders (59.7% against 61.3% next to them), so the
+data doesn't show the threshold being dodged to avoid competition. Budgets and approval limits set at
+$80k would give the same pattern.
+
+![Notices by value at award, $60k to $100k](results/charts/05_threshold_bunching.png)
+
+A check for split purchases (limited tenders under $80k to one supplier, same description and start,
+published within 30 days, $80k or more together) finds 220 groups: 710 notices and $32.9m at award at
+15 agencies. Most will have ordinary explanations, so it's a sample list for internal audit, not a finding.
+
+**Late reporting is mostly a few catch-up batches.** 8,390 notices (14.4%, $9.55bn) were published
+more than 42 days after the contract started. 51.6% of them came out on 166 days when one agency
+published 10 or more late notices. The largest: on 2024-09-16, Services Australia published 363 late
+notices, 360 of them agent and access point agreements starting 2024-07-01; Veterans' Affairs
+published its 1 July hospital, day procedure and community nursing agreements in December; Finance
+reported 88 electorate office leases that started between 2004 and 2022 in one day. Defence has the
+most late notices (2,560), but outside its batches only 1.8% of its notices are late.
+
+![Late publication by agency](results/charts/06_late_by_agency.png)
+
+**Value at award understates what's committed.** Active notices grew from $48.60bn at award to
+$62.21bn (28.0%), and open tenders grow more often than limited ones: 43.0% of open tenders from $80k
+grew, against 14.9% of limited tenders under a 10.3 condition and 23.1% under an exemption. The
+outliers are the ones to explain. Contracts let for extreme urgency (`EU`) grew 413.1%, mostly through one
+Defence construction contract (CN4104389) that went from $2.1m to $314.8m. 308 Veterans' Affairs notices
+were published at exactly $10,000, the reporting threshold, and later amended to $1.23bn. In all,
+1,814 notices that were under $80k at award are now $80k or more.
+
+**So what for the business?** The compliance basics hold up: above the line, almost every limited
+tender cites an allowed reason, so the work is checking that the reason fits, starting with the $5.80bn
+of extensions and sole sources, where the most money rides on whether the market was tested. Bunching under $80k is
+real but small and not tied to avoiding competition. It points to budgets or delegations set at the
+threshold, which is worth a look now that the line has moved to $125k (from 17 Nov 2025). Late
+reporting is mostly a process problem: half of all late notices come in catch-up batches, and the
+largest batches are annual agreements that start on 1 July and are signed or reported months
+later. Moving those renewals earlier in a few agencies is the biggest single fix. And because award values can be placeholders, a transparency
+dashboard should track current value and flag contracts that grew past a threshold or more than
+tenfold, not just the value at award.
+
 ## Roadmap
 
 - [x] **Part 1: source and profile.** Download, snapshot, the traps in the data and the rules they set.
 - [x] **Part 2: spend cube.** Category names from the AusTender UNSPSC codeset, spend by agency, category and supplier, supplier concentration by category (with and without Defence, and without the largest contract), and a BI-ready cube.
-- [ ] **Part 3: competition and compliance.** Limited tenders from $80k by reason and agency, value clustering under thresholds, late publication, and contracts that grew most after award.
+- [x] **Part 3: competition and compliance.** Limited tenders from $80k by reason and agency, value bunching under thresholds, possible split purchases, late publication and catch-up batches, and growth after award.
 - [ ] **Part 4: LLM-assisted categoriser.** Sorting coarsely coded notices into spend categories from their descriptions, with an offline baseline, a Claude backend (needs a key) and a hand-labelled check set.
 - [ ] **Part 5: write-up.** CI, TL;DR, ranked recommendations, limitations.
 
@@ -163,6 +226,7 @@ python -m scripts.check_amendment_values   # live API cross-check (network)
 python -m scripts.profile_releases         # Part 1 report and charts, offline
 python -m scripts.build_categories         # optional: rebuild the UNSPSC lookup (downloads 80 KB)
 python -m scripts.spend_cube               # Part 2 report, charts and CSVs, offline
+python -m scripts.compliance               # Part 3 report, charts and CSVs, offline
 pytest
 ```
 
@@ -171,8 +235,9 @@ pytest
 ```
 data/            releases.csv.gz (the snapshot), SNAPSHOT.json, unspsc_categories.csv; raw/ is not committed
 scripts/         download_data.py, build_snapshot.py, check_amendment_values.py, profile_releases.py,
-                 build_categories.py, spend_cube.py
-sql/             00_load.sql (typed views), profile.sql (Part 1), 01_spend.sql + spend.sql (Part 2)
-results/         SOURCE_PROFILE.md, AMENDMENT_CHECK.md, SPEND_CUBE.md, CSVs, charts/
+                 build_categories.py, spend_cube.py, compliance.py
+sql/             00_load.sql (typed views), profile.sql (Part 1), 01_spend.sql + spend.sql (Part 2),
+                 02_compliance.sql + compliance.sql (Part 3)
+results/         SOURCE_PROFILE.md, AMENDMENT_CHECK.md, SPEND_CUBE.md, COMPLIANCE.md, CSVs, charts/
 tests/           unit tests on hand-written releases, plus checks on the committed snapshot
 ```

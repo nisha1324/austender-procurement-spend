@@ -15,7 +15,11 @@ def part1() -> str:
 
 
 def part2() -> str:
-    return README.split("## Part 2", 1)[1].split("## Roadmap", 1)[0]
+    return README.split("## Part 2", 1)[1].split("## Part 3", 1)[0]
+
+
+def part3() -> str:
+    return README.split("## Part 3", 1)[1].split("## Roadmap", 1)[0]
 
 
 def figures(text: str) -> set[str]:
@@ -102,4 +106,61 @@ def test_part2_headline_phrases_are_tied_to_their_rows():
     text = part2()
     for in_cube, in_readme in pairs:
         assert in_cube in cube, in_cube
+        assert in_readme in text, in_readme
+
+
+# Rules and thresholds quoted in Part 3, not results.
+ALLOWED_3 = ALLOWED | {"400k", "7.5m", "125k", "1,000", "30k", "160k", "25k", "195k", "60k", "100k"}
+
+
+def test_part3_figures_appear_in_the_results():
+    comp = (ROOT / "results" / "COMPLIANCE.md").read_text()
+    missing = sorted(f for f in figures(part3()) if f not in comp and f.lstrip("$") not in ALLOWED_3)
+    assert not missing, f"README figures not found in results/COMPLIANCE.md: {missing}"
+
+
+def test_part3_headline_phrases_are_tied_to_their_rows():
+    comp = (ROOT / "results" / "COMPLIANCE.md").read_text()
+    pairs = [
+        ("23,860 active notices were worth $80k or more at award", "the 23,860 notices worth $80k or more at\naward"),
+        ("8,687 of them (36.4%) were limited tenders, $18.73bn at award (39.4% of the value)",
+         "8,687 of the 23,860 notices worth $80k or more at\naward (36.4%) were limited tenders, holding 39.4%"),
+        ("Without Defence: 4,453 of 17,017 (26.2%), 25.0% of the value", "without Defence, 26.2% and 25.0%"),
+        ("4,755 a 10.3 condition and 3,878 an exemption. **54 give neither**",
+         "4,755 cite a 10.3 condition and 3,878 an exemption. Only 54 give neither"),
+        ("All 54 have since been amended below $80k", "all 54 have since been\namended below $80k"),
+        ("| exemption | AM | Paragraph 2.6 was applied in some part. | 862 | $6.63bn | $8.43bn | 12 | 95.3% |",
+         "(`AM`, $6.63bn at award, 95.3% Defence)"),
+        ("extensions and sole sources, 3,792 notices and $5.80bn together", "3,792 notices and $5.80bn together"),
+        ("**At $80k the last $1,000 holds 345 notices, 2.31 times its neighbours**",
+         "holds 345 notices, 2.31\ntimes the mean of its neighbouring bins"),
+        ("At the other 13 round amounts the ratio is 0.82 to 1.52", "At the other 13 round amounts from $30k to $160k the ratio\nis 0.82 to 1.52"),
+        ("across all 170 $1,000 bins from $25k to $195k", "of all 170 $1,000 bins from $25k to $195k"),
+        ("That is about 196 more notices", "That is about 196 more notices than expected"),
+        ("59.7% of the last $1,000 against 61.3% of its neighbours", "(59.7% against 61.3% next to them)"),
+        ("**220 groups, 710 notices, $32.9m** at award, at 15 agencies", "220 groups: 710 notices and $32.9m at award at\n15 agencies"),
+        ("**8,390 of 58,192 notices (14.4%) were published more than 42 days after the contract started**, $9.55bn",
+         "8,390 notices (14.4%, $9.55bn) were published\nmore than 42 days after the contract started"),
+        ("**51.6% of late notices (4,328 of 8,390) came out in catch-up batches**: 166 days",
+         "51.6% of them came out on 166 days"),
+        ("| Services Australia | 2024-09-16 | 363 | 77 | agent and access point | 360 | 2024-07-01 |",
+         "on 2024-09-16, Services Australia published 363 late\nnotices, 360 of them agent and access point agreements starting 2024-07-01"),
+        ("is 88 electorate office leases that started between 2004 and 2022",
+         "reported 88 electorate office leases that started between 2004 and 2022"),
+        ("Defence publishes 2,560 late notices", "most late notices (2,560)"),
+        ("outside batches only 1.8% of its notices are late", "only 1.8% of its notices are late"),
+        ("went from $48.60bn to $62.21bn (28.0% more", "$48.60bn at award to\n$62.21bn (28.0%)"),
+        ("43.0% of open tenders grew (30.3% in value), against 14.9% of limited tenders under a 10.3 condition "
+         "(10.3%) and 23.1% under an exemption", "43.0% of open tenders from $80k\ngrew, against 14.9% of limited "
+         "tenders under a 10.3 condition and 23.1% under an exemption"),
+        ("grew the most (413.1%)", "grew 413.1%"),
+        ("CN4104389, Defence *Construction Services*, from $2.1m to $314.8m",
+         "Defence construction contract (CN4104389) that went from $2.1m to $314.8m"),
+        ("308 Veterans' Affairs notices were first published at exactly $10,000", "308 Veterans' Affairs notices\nwere published at exactly $10,000"),
+        ("to $1.23bn in total", "later amended to $1.23bn"),
+        ("1,814 notices were under $80k at award and are $80k or more now", "1,814 notices that were under $80k at award are now $80k or more"),
+    ]
+    text = part3()
+    for in_report, in_readme in pairs:
+        assert in_report in comp, in_report
         assert in_readme in text, in_readme
