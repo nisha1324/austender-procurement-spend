@@ -55,6 +55,8 @@ def pct(a, b, dp: int = 1) -> str:
 
 def money(x) -> str:
     x = float(x)
+    if x < 0:
+        return "-" + money(-x)
     if abs(x) >= 1e9:
         return f"${x / 1e9:,.2f}bn"
     if abs(x) >= 1e6:
