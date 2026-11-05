@@ -292,7 +292,8 @@ def write_report(pop, gold, mix, sc_off, ctx, base_pop, snap, sc_claude=None) ->
       "skills, IT and data, leadership and coaching, languages, safety, memberships.")
     w(f"- **A further {money(unk.est_value)}, in about {unk.est_notices:,.0f} notices ({100 * unk.notice_share:.1f}%), "
       "can't be placed at all:** the notice says only something like 'Training Services' and the supplier's name "
-      "doesn't say what the training is (a university or TAFE, or an unknown firm).")
+      "doesn't say what the training is (a university or TAFE, or an unknown firm). Together with the known "
+      f"topics, that puts agencies' own staff development here at {money(staff.est_value + unk.est_value)} at most.")
     w(f"- **Not training:** about {money(g.loc['Not training (miscoded)'].est_value)} "
       f"({g.loc['Not training (miscoded)'].est_notices:,.0f} notices) is catering, venues, school fees, care "
       "services, quality assurance, consulting, internships and similar, coded as education.\n")
@@ -324,6 +325,10 @@ def write_report(pop, gold, mix, sc_off, ctx, base_pop, snap, sc_claude=None) ->
     pc["Precision"] = pc.Precision.map(fmt_pct)
     pc["Recall"] = pc.Recall.map(fmt_pct)
     w(table(pc) + "\n")
+    named = sc_off["per_category"].query("category != 'unspecified' and predicted > 0")
+    w(f"For {int((named.precision >= 0.85).sum())} of the {len(named)} named categories, at least 85% of the "
+      "baseline's labels agree with the hand label. When the rules name a category, the label can usually be "
+      "trusted; the work is in what they leave as 'unspecified'.\n")
     cf = sc_off["confusions"].head(8).copy()
     cf["label"], cf["pred"] = cf.label.map(NAMES), cf.pred.map(NAMES)
     cf.columns = ["Hand label", "Baseline label", "Notices"]

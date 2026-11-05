@@ -67,7 +67,7 @@ Notices of $1m or more are exact. Under $1m, the random sample's shares (by coun
 - **Over half the value isn't training staff at all.** Programs delivered to the public are $540.7m (54.6%) in about 160 notices. The Skills for Education and Employment program alone is 18 notices and $428.3m.
 - **Military and operational training** is $120.6m (12.2%), 88% of it in notices of $1m or more. The largest is training bought through what appears to be the US Foreign Military Sales account ($41.7m, 2 notices); most of the rest is training systems (such as the P-8A's) and defence simulation and training firms such as Cubic, QinetiQ, Saab and Kongsberg.
 - **Staff development with a known topic** is about $154.0m in about 1,535 notices (42.8% of notices): professional and technical skills, IT and data, leadership and coaching, languages, safety, memberships.
-- **A further $121.6m, in about 1,451 notices (40.4%), can't be placed at all:** the notice says only something like 'Training Services' and the supplier's name doesn't say what the training is (a university or TAFE, or an unknown firm).
+- **A further $121.6m, in about 1,451 notices (40.4%), can't be placed at all:** the notice says only something like 'Training Services' and the supplier's name doesn't say what the training is (a university or TAFE, or an unknown firm). Together with the known topics, that puts agencies' own staff development here at $275.6m at most.
 - **Not training:** about $53.4m (268 notices) is catering, venues, school fees, care services, quality assurance, consulting, internships and similar, coded as education.
 
 ## 4. How well the keyword baseline does
@@ -104,6 +104,8 @@ Where the notice's own words say the category, the rules agree with the hand lab
 | Conferences, memberships and networks | 9 | 4 | 4 | 100.0% | 44.4% |
 | University or TAFE, topic not stated | 33 | 32 | 30 | 93.8% | 90.9% |
 | Can't tell from the notice | 65 | 120 | 64 | 53.3% | 98.5% |
+
+For 9 of the 11 named categories, at least 85% of the baseline's labels agree with the hand label. When the rules name a category, the label can usually be trusted; the work is in what they leave as 'unspecified'.
 
 Most common disagreements:
 
