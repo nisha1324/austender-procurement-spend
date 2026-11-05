@@ -19,7 +19,11 @@ def part2() -> str:
 
 
 def part3() -> str:
-    return README.split("## Part 3", 1)[1].split("## Roadmap", 1)[0]
+    return README.split("## Part 3", 1)[1].split("## Part 4", 1)[0]
+
+
+def part4() -> str:
+    return README.split("## Part 4", 1)[1].split("## Roadmap", 1)[0]
 
 
 def figures(text: str) -> set[str]:
@@ -164,3 +168,46 @@ def test_part3_headline_phrases_are_tied_to_their_rows():
     for in_report, in_readme in pairs:
         assert in_report in comp, in_report
         assert in_readme in text, in_readme
+
+
+def test_part4_figures_appear_in_the_results():
+    allowed = ALLOWED
+    missing = sorted(f for f in figures(part4()) if f not in SOURCES and f.lstrip("$") not in allowed)
+    assert not missing, f"README figures not found in results/*.md: {missing}"
+
+
+def test_part4_headline_phrases_are_tied_to_their_rows():
+    pairs = [
+        ("**3,796 notices, $2.30bn**", "3,796 of them\n($2.30bn)"),
+        ("7 vaccine notices ($1.30bn) are 99.8% of it", "7 vaccine notices make up 99.8% of the value"),
+        ("All 88 notices of $1m or more were labelled (a census, 78.2% of the value)",
+         "(88 notices, 78.2% of the value)"),
+        ("| Program delivery, not staff training | 160 | 4.4% | $540.7m | 54.6% |",
+         "| Programs delivered to the public | $540.7m | 54.6% | 160 |"),
+        ("| Military and operational | 176 | 4.9% | $120.6m | 12.2% |",
+         "| Military and operational training | $120.6m | 12.2% | 176 |"),
+        ("| Staff development, topic known | 1,535 | 42.8% | $154.0m | 15.6% |",
+         "| Staff development, topic known | $154.0m | 15.6% | 1,535 |"),
+        ("| Topic unknown | 1,451 | 40.4% | $121.6m | 12.3% |", "| $121.6m | 12.3% | 1,451 |"),
+        ("| Not training (miscoded) | 268 | 7.5% | $53.4m | 5.4% |", "| $53.4m | 5.4% | 268 |"),
+        ("Employment program alone is 18 notices and $428.3m", "Employment program alone\nis 18 notices and $428.3m"),
+        ("Foreign Military Sales account ($41.7m", "Foreign Military Sales account ($41.7m)"),
+        ("41.0% in the sample (95% interval 34.4% to 47.9%)", "41.0%,\nwith a 95% interval of 34.4% to 47.9%"),
+        ("| Random sample (typical notice) | 200 | 155 | 77.5% | 77.2% |", "| Random sample (200 notices) | 77.5% | 77.2% |"),
+        ("| $1m+ notices (the money) | 88 | 65 | 73.9% | 87.0% |", "| $1m+ notices (88) | 73.9% | 87.0% |"),
+        ("148 times out of 172 (86.0%)", "148 times out of\n172 (86.0%)"),
+        ("51 of 288 labels (17.7%)", "51 of 288 labels, 17.7%"),
+        ("outside knowledge, 8 of 51", "they get 8 of 51"),
+        ("Of the 68 disagreements, 56 are", "of the 68 disagreements, 56 are"),
+        ("For 9 of the 11 named categories, at least 85%", "for 9\nof the 11 named categories at least 85%"),
+        ("leaves 2,047 notices ($178.5m) as 'unspecified', against about 1,039", "2,047 notices ($178.5m)"),
+        ("2.0 times by count", "about twice the hand-label estimate\nof 1,039 by count"),
+        ("about 90 calls", "about 90 calls"),
+        ("staff development here at $275.6m at most", "at most $275.6m"),
+        ("can't be placed at all", "40.4% of notices nobody can"),
+        ("| Not training (miscoded) | 268 | 7.5% | $53.4m | 5.4% |", "and 5.4% isn't training at all"),
+    ]
+    for in_report, in_readme in pairs:
+        assert in_report in SOURCES, in_report
+        assert in_readme in part4(), in_readme
+    assert "not run" in part4() and "Not run: no `ANTHROPIC_API_KEY`" in SOURCES

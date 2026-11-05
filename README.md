@@ -1,6 +1,6 @@
 # Australian Government procurement spend analytics (AusTender)
 
-> **Status: in progress (Parts 1 to 3 of 5 done: source profile, spend cube, competition and compliance).** The parts still to come are listed in the [roadmap](#roadmap).
+> **Status: in progress (Parts 1 to 4 of 5 done: source profile, spend cube, competition and compliance, categorisation).** The parts still to come are listed in the [roadmap](#roadmap).
 
 The Australian Government publishes a notice for every contract worth $10,000 or more on
 AusTender. That makes it one of the few places where you can see how a large organisation really
@@ -204,12 +204,86 @@ later. Moving those renewals earlier in a few agencies is the biggest single fix
 dashboard should track current value and flag contracts that grew past a threshold or more than
 tenfold, not just the value at award.
 
+## Part 4: what "Education and Training" buys, and can a categoriser tell?
+
+Full results: [`results/CATEGORISER.md`](results/CATEGORISER.md) (generated), plus
+[`results/training_categories.csv`](results/training_categories.csv) (every notice with its label and the
+rule that fired) and [`results/training_category_mix.csv`](results/training_category_mix.csv).
+
+**Why training.** 4,672 active notices ($2.39bn) are coded only to a UNSPSC segment. 3,796 of them
+($2.30bn) sit in segments where the AusTender codeset has no family-level code at all, so this isn't
+lazy coding: an agency buying a course can only pick *Education and Training Services*. In drugs and
+pharmaceuticals, 7 vaccine notices make up 99.8% of the value and say what they are. That leaves
+Education and Training: **3,589 notices, $990.2m**, many described only as "Training Services".
+
+**Method.** A 12-category taxonomy built around a category manager's questions: is this staff
+development, operational training, a program delivered to the public, or not training at all? A check
+set of 288 notices, every notice of $1m or more (88 notices, 78.2% of the value) plus 200 at random from
+the rest, was labelled by hand from the description, supplier and agency, following a written
+[labelling guide](data/check_set/LABELLING_GUIDE.md). The labels were committed before any rules were
+written. Each label also records what it rests on: the description, the supplier's name, outside
+knowledge of the supplier, or nothing.
+
+**What the money buys** (hand labels; notices under $1m are estimated from the random sample):
+
+| Group | Value | Share of value | Notices (est.) |
+|---|---:|---:|---:|
+| Programs delivered to the public | $540.7m | 54.6% | 160 |
+| Military and operational training | $120.6m | 12.2% | 176 |
+| Staff development, topic known | $154.0m | 15.6% | 1,535 |
+| Topic unknown (university/TAFE or unknown firm, generic description) | $121.6m | 12.3% | 1,451 |
+| Not training (catering, venues, school fees, care services, consulting) | $53.4m | 5.4% | 268 |
+
+![What Education and Training spend buys](results/charts/07_training_mix.png)
+
+Over half the value isn't training staff at all. The Skills for Education and Employment program alone
+is 18 notices and $428.3m. Military and operational training is mostly a few large contracts, led by
+what appears to be the US Foreign Military Sales account ($41.7m). Staff development with a known topic
+is about $154.0m, spread across about 1,535 notices. A further $121.6m, in about 1,451 notices (40.4%),
+can't be placed by anyone reading the notice: the share of small notices with no known topic is 41.0%,
+with a 95% interval of 34.4% to 47.9%.
+
+**Can a categoriser do it?** `scripts/categorise.py` applies ordered keyword rules to the description
+and supplier name and records which rule fired. It was scored once against the check set, and the rules
+weren't changed after seeing the score:
+
+| Check set | Accuracy | Accuracy by value |
+|---|---:|---:|
+| Random sample (200 notices) | 77.5% | 77.2% |
+| $1m+ notices (88) | 73.9% | 87.0% |
+
+![Baseline accuracy by what the label rests on](results/charts/08_baseline_by_basis.png)
+
+Where the notice's own words name the category, the rules agree with the hand label 148 times out of
+172 (86.0%). Where the label needs outside knowledge (51 of 288 labels, 17.7%: what SANS, Cubic or
+QinetiQ sell, or that *Be Connected* is a program for older Australians), they get 8 of 51. The rules
+are cautious rather than wrong: of the 68 disagreements, 56 are a fall-back to "unspecified", and for 9
+of the 11 named categories at least 85% of the rules' labels agree with the hand label. Run on every
+notice, the rules leave 2,047 notices ($178.5m) as "unspecified", about twice the hand-label estimate
+of 1,039 by count.
+
+**The Claude backend** sends the same taxonomy and decision order as a prompt, forces a tool call
+with the category as an enum, and falls back to the rules on any invalid answer. It is built and tested
+with a fake client but **not run: no API key is set up**, so no LLM score is published. One run over
+all notices is about 90 calls. The check set says where it could help: the 51 labels that rest on
+outside knowledge.
+
+**So what for the business?** Don't benchmark "training spend" from this code. More than half of it
+is program delivery that belongs with the policy program it funds, and 5.4% isn't training at all.
+Agencies' staff development is at most $275.6m (the $154.0m with a known topic plus the $121.6m
+that can't be placed), not $990.2m. The bigger fix is upstream: for 40.4% of notices nobody can
+tell what the training was, and no categoriser can recover what was never published. A short
+description standard for training notices (topic, audience, format), or finer training codes in the
+codeset, would cost agencies a few words per notice. Until then, the keyword rules are a cheap,
+explainable first pass: trust the categories they name and send the "unspecified" remainder to an LLM
+or a person.
+
 ## Roadmap
 
 - [x] **Part 1: source and profile.** Download, snapshot, the traps in the data and the rules they set.
 - [x] **Part 2: spend cube.** Category names from the AusTender UNSPSC codeset, spend by agency, category and supplier, supplier concentration by category (with and without Defence, and without the largest contract), and a BI-ready cube.
 - [x] **Part 3: competition and compliance.** Limited tenders from $80k by reason and agency, value bunching under thresholds, possible split purchases, late publication and catch-up batches, and growth after award.
-- [ ] **Part 4: LLM-assisted categoriser.** Sorting coarsely coded notices into spend categories from their descriptions, with an offline baseline, a Claude backend (needs a key) and a hand-labelled check set.
+- [x] **Part 4: LLM-assisted categoriser.** A training spend taxonomy, a 288-notice hand-labelled check set, an explainable keyword baseline scored against it, and a Claude backend (built and tested; needs a key to run).
 - [ ] **Part 5: write-up.** CI, TL;DR, ranked recommendations, limitations.
 
 ## How to run
@@ -227,17 +301,24 @@ python -m scripts.profile_releases         # Part 1 report and charts, offline
 python -m scripts.build_categories         # optional: rebuild the UNSPSC lookup (downloads 80 KB)
 python -m scripts.spend_cube               # Part 2 report, charts and CSVs, offline
 python -m scripts.compliance               # Part 3 report, charts and CSVs, offline
+python -m scripts.categorise               # Part 4 report, charts and CSVs, offline (keyword baseline)
 pytest
+
+# Optional: the Claude backend for Part 4 (paid API; nothing runs without a key)
+pip install anthropic && cp .env.example .env   # then put your key in .env
+python -m scripts.categorise --backend claude
 ```
 
 ## Project structure
 
 ```
 data/            releases.csv.gz (the snapshot), SNAPSHOT.json, unspsc_categories.csv; raw/ is not committed
+data/check_set/  training_labels.csv (288 hand-labelled notices) and LABELLING_GUIDE.md
 scripts/         download_data.py, build_snapshot.py, check_amendment_values.py, profile_releases.py,
-                 build_categories.py, spend_cube.py, compliance.py
+                 build_categories.py, spend_cube.py, compliance.py, training_taxonomy.py,
+                 draw_check_set.py, categorise.py (baseline + Claude backend), categoriser_report.py
 sql/             00_load.sql (typed views), profile.sql (Part 1), 01_spend.sql + spend.sql (Part 2),
-                 02_compliance.sql + compliance.sql (Part 3)
-results/         SOURCE_PROFILE.md, AMENDMENT_CHECK.md, SPEND_CUBE.md, COMPLIANCE.md, CSVs, charts/
+                 02_compliance.sql + compliance.sql (Part 3), 03_training.sql (Part 4)
+results/         SOURCE_PROFILE.md, AMENDMENT_CHECK.md, SPEND_CUBE.md, COMPLIANCE.md, CATEGORISER.md, CSVs, charts/
 tests/           unit tests on hand-written releases, plus checks on the committed snapshot
 ```
