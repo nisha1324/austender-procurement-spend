@@ -1,0 +1,289 @@
+cn_id,stratum,description,supplier_name,agency,value_aud,label,basis,note
+CN4076921,large,Adult Education and Group Training Services,INDIAN OCEAN GROUP TRAINING ASSOCIA,"Department of Infrastructure, Transport, Regional Development, Communications and the Arts",1264000.0,public_program,outside_knowledge,"adult education for Indian Ocean Territories residents, inferred from supplier and agency; judgement call"
+CN4078158,large,Training Services,SANS TRAINING AUSTRALIA PTY LIMITED,Australian Signals Directorate,2000000.0,digital_it,outside_knowledge,SANS: cyber security training
+CN4080730,large,Staff Training,Murcotts Advanced Driving Pty Ltd Road Safety House,Department of Finance,2115000.0,safety_compliance,supplier_name,"advanced driving, road safety"
+CN4082941,large,Rural and Regional Enterprise Scholarships Program Administration,QUEENSLAND TERTIARY ADMISSIONS CENTRE LTD,Department of Education,3150000.0,public_program,description,
+CN4085975,large,Training Services,WODONGA INSTITUTE OF TAFE,Department of Defence,2139842.11,tertiary,supplier_name,
+CN4086858,large,Skills for Education and Employment (SEE) Program 2024-28 - VERTO LTD,VERTO LTD,Department of Employment and Workplace Relations,1560000.0,public_program,description,Skills for Education and Employment program
+CN4086859,large,Skills for Education and Employment (SEE) Program 2024-28 - Melbourne PolyTechnic,MELBOURNE POLYTECHNIC,Department of Employment and Workplace Relations,1267500.0,public_program,description,Skills for Education and Employment program
+CN4087141,large,Skills for Education and Employment (SEE) Program 2024-28 - South Metropolitan Youth Link,SOUTH METROPOLITAN YOUTH LINK,Department of Employment and Workplace Relations,16633500.0,public_program,description,Skills for Education and Employment program
+CN4087142,large,Skills for Education and Employment (SEE) Program 2024-28 - STEPS Group Australia Ltd,STEPS GROUP AUSTRALIA LIMITED,Department of Employment and Workplace Relations,46507500.0,public_program,description,Skills for Education and Employment program
+CN4087143,large,Skills for Education and Employment (SEE) Program 2024-28 - Navitas Skilled Futures,NAVITAS SKILLED FUTURES PTY LTD,Department of Employment and Workplace Relations,11212500.0,public_program,description,Skills for Education and Employment program
+CN4087144,large,Skills for Education and Employment (SEE) Program 2024-28 - Swinburne University of Technology,SWINBURNE UNIVERSITY OF TECHNOLOGY.,Department of Employment and Workplace Relations,10822500.0,public_program,description,Skills for Education and Employment program
+CN4087145,large,Skills for Education and Employment (SEE) Program 2024-28 - Career Employment Australia Ltd,CAREER EMPLOYMENT AUSTRALIA CAREER EMPLOYMENT AUSTRALIA,Department of Employment and Workplace Relations,2632500.0,public_program,description,Skills for Education and Employment program
+CN4087146,large,Skills for Education and Employment (SEE) Program 2024-28 - Edge Workforce Pty Ltd,EDGE WORKFORCE PTY LTD,Department of Employment and Workplace Relations,3120000.0,public_program,description,Skills for Education and Employment program
+CN4087147,large,Skills for Education and Employment (SEE) Program 2024-28 - Enterprise & Training Company Limited,ENTERPRISE & TRAINING COMPANY LTD,Department of Employment and Workplace Relations,5323500.0,public_program,description,Skills for Education and Employment program
+CN4087149,large,Skills for Education and Employment (SEE) Program 2024-28 - MTC Australia Ltd,MTC AUSTRALIA LIMITED,Department of Employment and Workplace Relations,141082500.0,public_program,description,Skills for Education and Employment program
+CN4087150,large,Skills for Education and Employment (SEE) Program 2024-28 - TAFE Queensland,TAFE QUEENSLAND,Department of Employment and Workplace Relations,19500000.0,public_program,description,Skills for Education and Employment program
+CN4087151,large,Skills for Education and Employment (SEE) Program 2024-28 - TAFE SA,TAFE SA,Department of Employment and Workplace Relations,45864000.0,public_program,description,Skills for Education and Employment program
+CN4087152,large,Skills for Education and Employment (SEE) Program 2024-28 - Technical and Further Education Commision,TECHNICAL AND FURTHER EDUCATION COM,Department of Employment and Workplace Relations,16653000.0,public_program,description,Skills for Education and Employment program
+CN4087153,large,Skills for Education and Employment (SEE) Program 2024-28 - Mainpiper Pty Ltd,MAINPIPER PTY LTD,Department of Employment and Workplace Relations,2730000.0,public_program,description,Skills for Education and Employment program
+CN4087204,large,Skills for Education and Employment (SEE) Program 2024-28 - Max Solutuions Pty Ltd,MAX EMPLOYMENT,Department of Employment and Workplace Relations,36465000.0,public_program,description,Skills for Education and Employment program
+CN4087205,large,Skills for Education and Employment (SEE) Program 2024-28 - Eighty9 Ltd,EIGHTY9 LIMITED,Department of Employment and Workplace Relations,19948500.0,public_program,description,Skills for Education and Employment program
+CN4087206,large,Skills for Education and Employment (SEE) Program 2024-28 - AMES Australia,AMES AUSTRALIA SERVICES,Department of Employment and Workplace Relations,25252500.0,public_program,description,Skills for Education and Employment program
+CN4087207,large,Skills for Education and Employment (SEE) Program 2024-28 - DJERRIWARRH EMPLOYMENT & EDUCATION SERVICES,DJERRIWARRH EMPLOYMENT & EDUCATION SERVICES - WEST MELBOURNE,Department of Employment and Workplace Relations,21742500.0,public_program,description,Skills for Education and Employment program
+CN4089213,large,Training Services,AMC SEARCH LIMITED,Department of Defence,4359240.0,unspecified,none,AMC Search is the Australian Maritime College's commercial arm; topic not stated
+CN4090532,large,Training Courses,SANS TRAINING AUSTRALIA PTY LIMITED,Australian Signals Directorate,1994999.99,digital_it,outside_knowledge,SANS
+CN4090533,large,Training Courses,SANS TRAINING AUSTRALIA PTY LIMITED,Australian Signals Directorate,1170070.0,digital_it,outside_knowledge,SANS
+CN4090807,large,Education and Training Services,FMS ACCOUNT RESERVE BANK OF AUSTRALIA,Department of Defence,38900468.79,military_operational,outside_knowledge,FMS account: appears to be US Foreign Military Sales
+CN4099328,large,Training Services,NATIONAL TEST PILOT SCHOOL INC,Department of Defence,2171035.47,military_operational,supplier_name,test pilot school
+CN4099680,large,Training Services,CAE AUSTRALIA PTY LTD,Department of Defence,1159198.84,military_operational,outside_knowledge,CAE: flight simulation and training
+CN4101026,large,Provision of Quality Assurance Services,LINDA WYSE & ASSOCIATES LINDA WYSE & ASSOCIATES PTY LTD T/A,Department of Employment and Workplace Relations,6600000.0,not_training,description,quality assurance services
+CN4103568,large,Training System Services,SAAB AUSTRALIA PTY LTD,Department of Defence,3360621.0,military_operational,description,training system
+CN4103976,large,Continuation of the Aged Care Skills Development Program,University of Tasmania,Department of Health and Aged Care,2238500.0,public_program,description,aged care workforce program
+CN4105078,large,Training Services,SAAB AUSTRALIA PTY LTD,Department of Defence,2906666.69,military_operational,outside_knowledge,Saab: defence company
+CN4105199,large,Graduate Certificate of Law (Postgraduate),AUSTRALIAN NATIONAL UNIVERSITY,Department of Home Affairs,2644972.3,professional_technical,description,"law, postgraduate; topic stated so not tertiary"
+CN4105698,large,Provision of Learning and Development - ATO Indigenous Evergreen Program Certificate IV Courses,Technical and Further Education Commission - Trading as TAFE NSW,Australian Taxation Office,1116030.0,tertiary,supplier_name,"Certificate IV courses, topic not stated; judgement call"
+CN4107604,large,Training Services,NATIONAL TEST PILOT SCHOOL INC,Department of Defence,1328665.37,military_operational,supplier_name,test pilot school
+CN4109611,large,Education Services,QUEENSLAND UNIVERSITY OF TECHNOLOGY STUDENT BUSINESS SERVICES,Department of Defence,3048784.38,tertiary,supplier_name,
+CN4109699,large,Education and Training Services,FMS ACCOUNT RESERVE BANK OF AUSTRALIA,Department of Defence,2842572.04,military_operational,outside_knowledge,FMS account: appears to be US Foreign Military Sales
+CN4110460,large,Engage Australian National University to Support the Capacity Building Capability Program,Australian National University,Department of Health and Aged Care,1561064.72,tertiary,supplier_name,"capability program, topic not stated; judgement call"
+CN4110866,large,Training and Development Services,Australian National University,National Indigenous Australians Agency,1220000.0,tertiary,supplier_name,
+CN4112666,large,Internship Services,THE CAREER NETWORK,Department of Defence,7383230.34,not_training,description,"internships: recruitment, not training; judgement call"
+CN4114140,large,Training Services,SANS TRAINING AUSTRALIA PTY LIMITED,Australian Signals Directorate,2000000.0,digital_it,outside_knowledge,SANS
+CN4115656,large,Aged Care Nursing Clinical Placements,HUNTER PRIMARY CARE LTD T/A Hunter Urban Medicare Ltd,Department of Health and Aged Care,2891000.02,public_program,description,clinical placements
+CN4115657,large,Aged Care Nursing Clinical Placements,Desjan Pty Ltd T/A Pop-Up Health,Department of Health and Aged Care,2019000.0,public_program,description,clinical placements
+CN4115658,large,Aged Care Nursing Clinical Placements,BRIGHTWATER CARE GROUP LIMITED,Department of Health and Aged Care,2107000.02,public_program,description,clinical placements
+CN4115666,large,Services for Health Professional Training on Managing Menopause,THE JEAN HAILES FOUNDATION,Department of Health and Aged Care,1313400.0,public_program,description,training health professionals outside government
+CN4115780,large,Training Services,QINETIQ,Department of Defence,2415467.34,military_operational,outside_knowledge,QinetiQ: defence training
+CN4116554,large,Aged Care Nursing Clinical Placements Program,AUSTRALIAN PRIMARY HEALTH CARE NURS ASSOCIATION INC,"Department of Health, Disability and Ageing",5676677.48,public_program,description,clinical placements
+CN4116555,large,Aged Care Nursing Clinical Placement Program,UNIVERSITY OF CANBERRA,"Department of Health, Disability and Ageing",6846577.45,public_program,description,clinical placements
+CN4119186,large,Provision of education and training services,ELYSIUM EPL PTY. LTD.,Australian Federal Police,1000775.05,unspecified,none,
+CN4120670,large,Aged Care Transition Practice Program,CHARLES DARWIN UNIVERSITY,"Department of Health, Disability and Ageing",1321136.0,public_program,description,aged care transition to practice
+CN4121184,large,Supplier to Deliver Aged Care Transition to Practice Program,AGED & COMMUNITY CARE PROVIDERS ASSOCIATION LTD T/A Ageing Australi,"Department of Health, Disability and Ageing",3432011.65,public_program,description,aged care transition to practice
+CN4121371,large,Training Services and Equipment,DEPARTMENT OF ENERGY,Department of Defence,1004511.56,unspecified,none,Department of Energy (likely US); topic not stated
+CN4121796,large,Language Training Services,CIT SOLUTIONS PTY LIMITED,Department of Home Affairs,1072500.0,language,description,
+CN4123400,large,Training Services,GURUGUN PTY LTD,Department of Defence,3164398.55,unspecified,none,
+CN4125881,large,Education and Training Services,UNIVERSITY OF TASMANIA,Department of Home Affairs,4400000.0,tertiary,supplier_name,
+CN4126311,large,Provision of Services for the Teacher Resource Hubs,Education Services Australia Ltd,Department of Education,41207646.41,public_program,description,teacher resources
+CN4127581,large,Leadership Training,MELBOURNE BUSINESS SCHOOL,Australian Signals Directorate,1292524.56,leadership_coaching,description,
+CN4128359,large,Delivery of the Aged Care Transition to Practice Program,University Of The Sunshine Coast,"Department of Health, Disability and Ageing",2222315.25,public_program,description,aged care transition to practice
+CN4129043,large,Training Services,PEER VEET REFRIGERATION VOCATIONAL EDUCATION,Department of Defence,56484680.01,professional_technical,supplier_name,refrigeration vocational training
+CN4129875,large,Training Development Services,UNE PARTNERSHIPS PTY LTD,Department of Defence,1854105.0,tertiary,supplier_name,UNE Partnerships: University of New England
+CN4130301,large,Education and Training Services,EXHALE COACHING & CONSULTING PTY,Department of Home Affairs,2937386.1,leadership_coaching,supplier_name,coaching
+CN4131544,large,Aged Care Transition to Practice Program,Australian College of Nursing Ltd,"Department of Health, Disability and Ageing",1364818.18,public_program,description,aged care transition to practice
+CN4132429,large,Training Services,UNIVERSITY OF NEW SOUTH WALES CASHIER OFFICE,Department of Defence,1110741.08,tertiary,supplier_name,
+CN4143586,large,Training Services,INNOVAERO PTY LTD,Department of Defence,1099462.1,unspecified,none,
+CN4143589,large,Training Services,CUBIC DEFENCE AUSTRALIA PTY LTD,Department of Defence,2329640.9,military_operational,outside_knowledge,Cubic Defence: training and simulation
+CN4143590,large,Training Services,CUBIC DEFENCE AUSTRALIA PTY LTD,Department of Defence,2108401.67,military_operational,outside_knowledge,Cubic Defence
+CN4143591,large,Training Services,CUBIC DEFENCE AUSTRALIA PTY LTD,Department of Defence,1608031.46,military_operational,outside_knowledge,Cubic Defence
+CN4146117,large,Training and Development Services,Australian National University,Department of the Prime Minister and Cabinet,5020000.0,tertiary,supplier_name,
+CN4146752,large,Designing Curricula and Piloting Short Mining Training Courses,The University of Queensland C/- Accouts Receivable,Department of Education,1062673.0,public_program,description,mining courses for industry; judgement call
+CN4147637,large,Delivery of Catering and Hospitality Support Services,CHISHOLM INSTITUTE OF TAFE DANDENONG CAMPUS,Department of Defence,14307134.8,not_training,description,catering and hospitality support services; judgement call
+CN4148065,large,P-8A Training System Support,AIR7000 P8 POSEIDON,Department of Defence,16651573.8,military_operational,description,P-8A training system
+CN4148661,large,Aboriginal and Torres Strait Islander Register Training Organisation (RTO) Community of Practice (CoP),NACCHO,Department of Employment and Workplace Relations,1500000.0,public_program,description,community of practice for external training organisations
+CN4151005,large,Learning and Development,CUBIC DEFENCE AUSTRALIA PTY LTD,Department of Defence,1159858.97,military_operational,outside_knowledge,Cubic Defence
+CN4153848,large,Androgogic - LMS for DLOA (admin),Androgogic Pty Ltd,Office of the eSafety Commissioner,1029311.48,public_program,outside_knowledge,LMS for Digital Literacy for Older Australians (Be Connected); judgement call
+CN4153851,large,21CeSA060 — Be Connected Content,The Gadget Group Pty Ltd,Office of the eSafety Commissioner,7281633.7,public_program,outside_knowledge,Be Connected: eSafety's digital literacy program for older Australians
+CN4154600,large,Training,SAR Training Australia PRMEC: Family Trust Pty Ltd Trading,Department of Foreign Affairs and Trade,1190539.9,safety_compliance,supplier_name,SAR: search and rescue; judgement call
+CN4155385,large,Training Services,CUBIC DEFENCE AUSTRALIA PTY LTD,Department of Defence,1919207.24,military_operational,outside_knowledge,Cubic Defence
+CN4155388,large,Training Services,CUBIC DEFENCE AUSTRALIA PTY LTD,Department of Defence,4872657.16,military_operational,outside_knowledge,Cubic Defence
+CN4155835,large,In Home Care Support Agency QLD and VIC,FAMILY DAY CARE ASSOCIATION QLD LTD,Department of Education,5869162.0,not_training,description,"childcare support, not education; judgement call"
+CN4155983,large,First Nations Carbon Outreach and Consultation,INDIGENOUS CARBON INDUSTRY NETWORK LTD,"Department of Climate Change, Energy, the Environment and Water",2304572.49,not_training,description,outreach and consultation
+CN4156520,large,Training Services,UNIVERSITY OF NEW SOUTH WALES,Department of Defence,1053376.0,tertiary,supplier_name,
+CN4158297,large,Provision of training,SANS TRAINING AUSTRALIA PTY LIMITED,Australian Federal Police,1030000.0,digital_it,outside_knowledge,SANS
+CN4159172,large,Training Services,INSITU PACIFIC PTY LTD,Department of Defence,5089313.86,military_operational,outside_knowledge,Insitu: unmanned aircraft maker
+CN4160198,large,Drought Resilience Scholarships Program,NUFFIELD AUSTRALIA,"Department of Agriculture, Fisheries and Forestry",3520000.0,public_program,description,scholarships
+CN4162039,large,Training services,ZNE-AG CRC LIMITED [977],"Department of Agriculture, Fisheries and Forestry",2544267.0,unspecified,none,research centre; topic not stated
+CN4163792,large,Training Services,QINETIQ PTY LTD,Department of Defence,10955598.35,military_operational,outside_knowledge,QinetiQ
+CN4163799,large,Training Services,KONGSBERG DIGITAL AS,Department of Defence,4554809.0,military_operational,outside_knowledge,Kongsberg Digital: maritime simulators
+CN4066060,random,Strategic Media Training,RD Consulting,Office of the Commonwealth Ombudsman,12100.0,professional_technical,description,media skills
+CN4072542,random,PROC1573-June 2024 Payments training with PayED,ASIA PAYMENTS ACADEMY PTY LTD,Australian Securities and Investments Commission,14850.0,professional_technical,description,payments
+CN4072567,random,Face to face bespoke training in i2 product suite,VISUAL ANALYSIS PTY LTD,Australian Securities and Investments Commission,17875.0,digital_it,description,i2 analysis software
+CN4072961,random,Training Services,SQ *BREATHING AND PERF,Department of Defence,17500.0,professional_technical,supplier_name,breathing and performance; judgement call
+CN4073011,random,Education Services,SWINBURNE UNIVERSITY,Department of Defence,23086.25,tertiary,supplier_name,
+CN4073014,random,Training Courses,ANU,Department of Defence,18000.0,tertiary,supplier_name,
+CN4073017,random,Training Services,PROJECT PERFORMANCE IN,Department of Defence,23760.0,professional_technical,supplier_name,project performance
+CN4073166,random,Training Services,SANS INSTITUTE,Department of Defence,14531.5,digital_it,outside_knowledge,SANS
+CN4073310,random,Training Services,AHRI LTD,Australian Submarine Agency,18700.0,professional_technical,outside_knowledge,AHRI: HR institute
+CN4075747,random,Training Services,PEAK LEARNING PTY LTD,Department of Defence,94506.5,unspecified,none,
+CN4076360,random,Training Services,MYO*PEPworldwide Austr,Department of Defence,11819.49,professional_technical,outside_knowledge,PEP: personal productivity training; judgement call
+CN4076396,random,Education Services,JEFF WHALAN LEARNING,Department of Defence,14934.62,events_memberships,outside_knowledge,Jeff Whalan Learning: executive learning groups
+CN4076934,random,Implement and Deliver the Women in Aviation Industry Initiative,CIVIL AVIATION ACADEMY AUSTRALASIA,"Department of Infrastructure, Transport, Regional Development, Communications and the Arts",847000.0,public_program,description,industry initiative
+CN4077665,random,Training,National Institute of Dramatic Art,Department of Foreign Affairs and Trade,23397.0,professional_technical,outside_knowledge,NIDA corporate: presentation skills; judgement call
+CN4077673,random,Training,National Institute of Dramatic Art,Department of Foreign Affairs and Trade,23397.0,professional_technical,outside_knowledge,NIDA corporate: presentation skills; judgement call
+CN4078277,random,Training Services,CAPABILITY ASSOCIATES PTY LTD,Australian Signals Directorate,90882.0,unspecified,none,
+CN4078892,random,Training Services,KONNECT LEARNING PTY L,Australian Submarine Agency,10555.6,unspecified,none,
+CN4079841,random,Training Services,THINK BUSINESS EVENT,Department of Defence,34380.0,events_memberships,supplier_name,events company; judgement call
+CN4081828,random,Training Support Services,J&D GROUP NQ,Department of Defence,141350.0,unspecified,none,
+CN4082516,random,Training Services,UNIVERSITY OF TASMANIA,Department of Defence,64262.0,tertiary,supplier_name,
+CN4082950,random,deliver academic tuition and program management,AUSTRALIAN NATIONAL UNIVERSITY,Department of Home Affairs,249735.55,tertiary,supplier_name,"academic tuition, topic not stated"
+CN4083050,random,Language Training,University of New South Wales,Department of Foreign Affairs and Trade,30370.3,language,description,
+CN4083225,random,Provision of education and training services,MARILYNN ROSS T/a TRAINING DESIGN AND DELIVERY SO,Australian Federal Police,66000.0,unspecified,none,
+CN4083760,random,Strength and Conditioning Support Services,BRIDGE PROJECT SOLUTIONS PTY LTD,Department of Defence,82260.11,military_operational,description,strength and conditioning for Defence; judgement call
+CN4083863,random,Training Services,MASSACHUSETTS INSTITUTE OF TECHNOLO,Australian Submarine Agency,701392.5,tertiary,supplier_name,MIT; topic not stated
+CN4084494,random,Training Course,THE LEADERSHIP INSTITUTE,Department of Employment and Workplace Relations,14298.9,leadership_coaching,supplier_name,
+CN4085211,random,Executive Membership Renewal,WHON Pty Limited,Department of Home Affairs,13035.0,events_memberships,description,
+CN4085745,random,Training Services,AHRI LTD,Department of Defence,12800.0,professional_technical,outside_knowledge,AHRI
+CN4086985,random,Language Training,University of New South Wales,Department of Foreign Affairs and Trade,61722.47,language,description,
+CN4087431,random,Training Services,MYO*PEPWORLDWIDE AUSTR,Department of Defence,25406.02,professional_technical,outside_knowledge,PEP; judgement call
+CN4087731,random,Remote Pilot Licence training,Hardworking Software Pty Ltd,"Department of Agriculture, Fisheries and Forestry",12160.0,professional_technical,description,drone licence
+CN4088784,random,Training Services,Asset Training Australia Pty Ltd,Services Australia,29760.0,unspecified,none,
+CN4088923,random,Training Services,ASQA,Department of Defence,15900.0,not_training,outside_knowledge,"ASQA is the VET regulator: likely fees, not training; judgement call"
+CN4088955,random,Training Services,MYO*JFE GLOBAL PTY LTD,Department of Defence,12500.0,unspecified,none,
+CN4088985,random,Training Services,THE HATCHERY (HUB),Australian Signals Directorate,23916.75,unspecified,none,
+CN4089024,random,Education and Training Services,Leargas Pty Ltd,Department of the Treasury,23100.0,unspecified,none,
+CN4089419,random,Facilitation and Assessment Services,Talent International Pty Ltd,Department of Foreign Affairs and Trade,50000.01,not_training,outside_knowledge,"recruitment firm; assessment, not training; judgement call"
+CN4089819,random,ANZSOG Deputy Leadership Program,THE AUSTRALIAN & NZ SCHOOL OF GOVERNMENT,"Department of Agriculture, Fisheries and Forestry",22000.0,leadership_coaching,description,
+CN4091127,random,Training Services,COMPANY DIRECTOR,Department of Defence,10180.0,professional_technical,supplier_name,company directors course
+CN4091613,random,Workshop Facilitation,ADAM BEAUMONT ta WITH PURPOSE,Department of Home Affairs,68750.0,unspecified,none,"facilitation, no topic"
+CN4091647,random,Australian Government Legal Service training,RLW Consulting,Attorney-General's Department,22550.0,professional_technical,description,legal
+CN4091800,random,Rations,RADIXNUTRITION.COM.AU,Department of Defence,14388.27,not_training,description,rations
+CN4091824,random,Training Services,UNIVERSITY OF SYDNEY,Department of Defence,13015.98,tertiary,supplier_name,
+CN4091834,random,Training Services,COMPANY DIRECTOR,Department of Defence,10245.0,professional_technical,supplier_name,company directors course
+CN4091838,random,Training Services,UNSW,Department of Defence,15121.5,tertiary,supplier_name,
+CN4091906,random,Training Services,RISK DECISIONS PTY LTD,Department of Defence,11860.84,professional_technical,supplier_name,risk; judgement call
+CN4091997,random,Expeditioner Training - Fume Cupboard & Medical Gases 2024/25,CONTACT ELECTRICAL PTY LTD,"Department of Climate Change, Energy, the Environment and Water",14025.0,professional_technical,description,"technical, Antarctic expeditioners"
+CN4092184,random,Training and Development Services,WHON Pty Ltd,Department of the Prime Minister and Cabinet,13035.0,unspecified,none,
+CN4092265,random,Training Delivery,HIGHCOM LIMITED,Department of Defence,186356.37,unspecified,none,
+CN4092302,random,Training Services,UNIVERSITY OF NSW ADFA UNSW@ADF,Department of Defence,683084.0,tertiary,supplier_name,
+CN4092376,random,Training Support Services,CUBIC DEFENCE AUSTRALIA PTY LTD,Department of Defence,457438.27,military_operational,outside_knowledge,Cubic Defence
+CN4092383,random,Education and Training Services,CRANFIELD UNIVERSITY,Department of Defence,31639.46,tertiary,supplier_name,
+CN4093656,random,Training Services,JEFF WHALAN LEARNING,Department of Defence,13165.35,events_memberships,outside_knowledge,Jeff Whalan Learning
+CN4093728,random,Training Services,ONI,Australian Signals Directorate,28240.0,unspecified,none,Office of National Intelligence; topic not stated
+CN4094385,random,Training Services,SOUTHTECH ENGINEERING PTY LTD,Department of Defence,35162.6,unspecified,none,
+CN4094696,random,Provision of education and training services,ANZSOG,Australian Taxation Office,15400.0,tertiary,outside_knowledge,"ANZSOG: school of government, topic not stated"
+CN4094785,random,Training,JEM Coaching International,Australian Criminal Intelligence Commission,11000.0,leadership_coaching,supplier_name,coaching
+CN4095316,random,Expeditioner Training - Polymobil Xray,Siemens Healthcare Pty Ltd,"Department of Climate Change, Energy, the Environment and Water",30580.0,professional_technical,description,"x-ray equipment, Antarctic expeditioners"
+CN4095596,random,Training Services,PORT ASH AUSTRALIA TRUST,Department of Defence,12650.0,unspecified,none,
+CN4096160,random,Training Services,INTELO TRAINING SOLUTIONS,Department of Defence,33000.0,unspecified,none,
+CN4096501,random,Assessment Marking & Case Study Development,NATALIE DAVIS,Department of Home Affairs,15000.0,unspecified,none,"assessment marking, topic not stated; judgement call"
+CN4097701,random,Training Services,COMPANY DIRECTOR,Australian Signals Directorate,10180.0,professional_technical,supplier_name,company directors course
+CN4097887,random,Training Services,PEP WORLDWIDE,Department of Defence,168498.0,professional_technical,outside_knowledge,PEP; judgement call
+CN4098521,random,Exec Learning Membership Jeff Whalan,Jeff Whalan Learning Group,Department of Parliamentary Services,13035.0,events_memberships,description,
+CN4098803,random,Training Services,FLYWIRE*ACAP,Department of Defence,10573.54,tertiary,outside_knowledge,ACAP: college of applied professions
+CN4099161,random,AIPM Course,Australian Federal Police,Sport Integrity Australia,10450.0,leadership_coaching,outside_knowledge,AIPM: police management institute
+CN4099184,random,Education and Training Services,CAREFLIGHT LIMITED,"Department of Agriculture, Fisheries and Forestry",13564.4,safety_compliance,outside_knowledge,"CareFlight: aeromedical, likely first aid; judgement call"
+CN4101116,random,First Aid Training,SQ *LIFEAID PTY LTD,Department of Defence,14283.78,safety_compliance,description,
+CN4102344,random,Training and Coaching Services,Best Practice Consulting Pty Ltd,Department of Foreign Affairs and Trade,20000.0,leadership_coaching,description,coaching
+CN4102389,random,Launch into Work pre-employment project,COMPASS GROUP (AUSTRALIA) PTY LTD COMPASS GROUP (AUSTRALIA) PTY LTD,Department of Employment and Workplace Relations,63115.12,public_program,description,pre-employment project
+CN4102631,random,Provision of education and training services,INTREPID MINDS PTY LTD,Australian Taxation Office,15020.78,unspecified,none,
+CN4103682,random,Program Training,Pragma Partners Pty Ltd,Clean Energy Regulator,10000.0,unspecified,none,"program training, topic not stated"
+CN4103802,random,eLearning modules Framework redesign,Obvious Choice Pty Ltd,Attorney-General's Department,74910.0,elearning,description,
+CN4104100,random,Education Services,MAGICAL LEARNING,Department of Defence,11838.75,unspecified,none,
+CN4104852,random,People Measures - Process and Group Facilitation services,People Measures Pty Ltd,Australian Competition and Consumer Commission,25575.0,unspecified,none,"facilitation, no topic"
+CN4105084,random,Training Services,AUSTRALIAN CYBER COLLABORATION CENTRE LIMITED,Department of Defence,39600.0,digital_it,supplier_name,
+CN4105399,random,Software Training,DYNAMIC WEB TRAINING PTY LIMITED,"Department of Agriculture, Fisheries and Forestry",100000.0,digital_it,description,
+CN4105442,random,Executive Coaching EL1,DIRECTIONS FOR CHANGE,Department of Veterans' Affairs,105486.0,leadership_coaching,description,
+CN4105511,random,Training Services,NXUS PEOPLE PTY LTD,Department of Defence,12375.0,unspecified,none,
+CN4106034,random,Specialist Education and Training Services - workshops,STANDARDS AUSTRALIA LIMITED,"Department of Industry, Science and Resources",103961.0,professional_technical,supplier_name,standards
+CN4106931,random,Training Services,RISING SOLIS PTY LTD,Department of Defence,11046.96,unspecified,none,
+CN4107177,random,Indigenous Ranger Training,TREESCAPE SOLUTIONS PTY LTD,"Department of Agriculture, Fisheries and Forestry",13350.0,public_program,description,rangers outside government; judgement call
+CN4107224,random,Workshop facilitation & development,RB Counselling and Consultancy Services,Department of Social Services,62378.8,unspecified,none,"facilitation, no topic"
+CN4108400,random,Professional Development,WHON Pty Limited,National Emergency Management Agency,16390.0,unspecified,none,
+CN4108698,random,Educational Textbooks,ABBEYS BOOKSHOP,Australian Signals Directorate,12034.62,not_training,description,books; judgement call
+CN4108700,random,Education Services,ANU,Australian Signals Directorate,18900.0,tertiary,supplier_name,
+CN4108794,random,Education and Training.,AUSTRALIAN INSTITUTE OF MGT EDUC and TRNG,Department of Veterans' Affairs,59260.85,leadership_coaching,supplier_name,Institute of Management
+CN4110393,random,Training Services,LEARN TO FLY AUSTRALIA OPERATIONS PTY LTD,Department of Defence,12100.0,military_operational,supplier_name,flying training
+CN4111030,random,Specialist Education and Training Services,ELABOR8 PTY LTD,"Department of Industry, Science and Resources",18150.0,unspecified,none,
+CN4111096,random,"ECY Regulatory Project, Regulatory Officers Training",AUSTRALIAN CHILDREN'S EDUCATION & CARE QUALITY AUTHORITY,Department of Education,28930.0,professional_technical,description,regulatory practice for regulators; judgement call
+CN4111465,random,Training Services,Institute Of Live Communications Pty Ltd t/a Social Agility,Fair Work Commission,12083.5,professional_technical,supplier_name,communications
+CN4113137,random,Training Services,Australian Public Service Commission,Services Australia,35200.0,unspecified,none,APS Commission; topic not stated
+CN4113217,random,Training Services,CRANFIELD UNIVERSITY,Department of Defence,60152.83,tertiary,supplier_name,
+CN4114578,random,Training Course,THE UNIVERSITY OF QUEENSLAND,Department of Defence,99990.0,tertiary,supplier_name,
+CN4115727,random,Community Education and Engagement Partnership - TAS,MIGRANT RESOURCE CENTRE ( SOUTHERN TAS) INC,Australian Electoral Commission,81382.0,public_program,description,community education
+CN4115741,random,Future Leaders Training Program,Institute of Public Administration,Attorney-General's Department,12600.0,leadership_coaching,description,
+CN4116038,random,Workshop Delivery,DAVID LYNAS CONSULTING PTY LTD,Australian Signals Directorate,90750.0,unspecified,none,
+CN4116357,random,Training,WINGS EDUCATION LTD,Department of Foreign Affairs and Trade,12950.47,unspecified,none,
+CN4116464,random,Training Services,Utility Helicopters Pty Ltd,Department of Defence,19965.0,military_operational,supplier_name,helicopters
+CN4118485,random,Library subscription services,Elsevier B.V,Department of Foreign Affairs and Trade,23420.5,not_training,description,subscription
+CN4119383,random,Education and training services,UNIVERSITY OF NEW SOUTH WALES,Australian Prudential Regulation Authority,96800.0,tertiary,supplier_name,
+CN4119681,random,Training Services,UNSW,Department of Defence,26000.0,tertiary,supplier_name,
+CN4120781,random,Design and Delivery of Methyl Bromide Training to Industry - CSU,CHARLES STURT UNIVERSITY,"Department of Agriculture, Fisheries and Forestry",167959.0,public_program,description,training industry
+CN4120809,random,Education and Training Workshops,Comcare,Attorney-General's Department,33000.0,safety_compliance,outside_knowledge,Comcare: WHS regulator
+CN4121041,random,Training Services,THE HATCHERY (HUB),Department of Defence,19133.4,unspecified,none,
+CN4121042,random,Training Services,THE HATCHERY (HUB),Department of Defence,21525.08,unspecified,none,
+CN4121071,random,DVA Lived Experience team to co-develop training material.,Lived Experience Leadership and Advocacy,Department of Veterans' Affairs,11000.0,unspecified,none,"training material, topic not stated"
+CN4121479,random,Language Training Services,University of New South Wales,Department of Foreign Affairs and Trade,636670.32,language,description,
+CN4122004,random,Policy Hackathon Facilitators for 2025 National Youth Forum,CAPIRE CONSULTING GROUP PTY LTD,Department of Education,24893.0,not_training,description,youth forum facilitation
+CN4122300,random,Learning and Development,Australian Public Service Commissio,Department of Health and Aged Care,14000.0,unspecified,none,
+CN4123079,random,Education and Training Services,JYA INDIGENOUS PROGRAMS PTY LTD,Department of Home Affairs,135003.0,unspecified,none,Indigenous programs; topic not stated
+CN4124630,random,Specialist Education and Training Services,MCMILLAN STAFF DEVELOPMENT PTY LTD,"Department of Industry, Science and Resources",25000.0,unspecified,none,
+CN4126682,random,Training Services,CGGS,Department of Defence,20645.23,not_training,outside_knowledge,CGGS: Canberra Girls Grammar School fees
+CN4126927,random,Training Services,AMAZON WEB SERVICES AUSTRALIA PTY LTD,Australian Signals Directorate,64695.44,digital_it,supplier_name,Amazon Web Services
+CN4127672,random,Training Services,CERTITUDE AUSTRALIA,Services Australia,31929.98,unspecified,none,
+CN4127718,random,Provision of Learning and Development,AUSTRALIAN FORENSIC SERVICES,Australian Taxation Office,16750.0,professional_technical,supplier_name,forensics
+CN4127757,random,Training Services,AICD-Australian Institute of Compan Directors,Department of Foreign Affairs and Trade,12600.0,professional_technical,supplier_name,company directors
+CN4128179,random,Training Courses,SANS TRAINING AUSTRALIA PTY LIMITED,Australian Signals Directorate,761970.0,digital_it,outside_knowledge,SANS
+CN4128327,random,Training Services,THE BULLSHIFT COMPANY,Australian Signals Directorate,12591.56,unspecified,none,
+CN4129144,random,Specialist Education and Training Services,ETHOS CRS CONSULTING PTY LTD,"Department of Industry, Science and Resources",80000.0,unspecified,none,
+CN4129872,random,Training Services,WORKWRITE PTY LTD,Department of Defence,21054.0,professional_technical,supplier_name,writing
+CN4129883,random,Training Services,EUREKA SAILING ADVENTURES,Department of Defence,10890.0,military_operational,supplier_name,sailing for Defence; judgement call
+CN4129884,random,Training Services,EPE TRUSTED TO PROTECT,Department of Defence,19834.96,unspecified,none,
+CN4130322,random,Innovative Project,TAFE QUEENSLAND,Department of Home Affairs,54861.94,tertiary,supplier_name,"'Innovative project', topic not stated"
+CN4130821,random,Specialist Education and Training Services (Coaching),YELLOW EDGE PTY LTD,"Department of Industry, Science and Resources",65000.0,leadership_coaching,description,coaching
+CN4131055,random,Competition Division 2025 AGIS Training course fees,Public Sector Training Solutions Pty Ltd,Australian Competition and Consumer Commission,124900.0,professional_technical,description,investigations standard
+CN4131208,random,Professional Advice on Payroll Delivery Capability Uplift,FYUSION ASIA PACIFIC PTY LTD,"Department of Industry, Science and Resources",281325.0,not_training,description,consulting advice
+CN4131729,random,Complex Complainants,STRATAGEM ENTERPRISES PTY LTD,Australian Communications and Media Authority,50710.0,professional_technical,description,complaint handling
+CN4133431,random,Training Services,THE BULLSHIFT COMPANY,Australian Signals Directorate,24623.5,unspecified,none,
+CN4133812,random,Coaching Program,Stephenson Mansell Group Pty Ltd,Future Fund Management Agency,20075.0,leadership_coaching,description,coaching
+CN4133840,random,Facilitation workshops,ADAM BEAUMONT ta WITH PURPOSE,Department of Home Affairs,75625.0,unspecified,none,"facilitation, no topic"
+CN4134868,random,"Training, Education and Development Services",Lifeline Australia Ltd,NDIS Quality and Safeguards Commission,13322.1,safety_compliance,outside_knowledge,Lifeline: mental health and suicide prevention; judgement call
+CN4135313,random,Training Services,COMPANY DIRECTOR,Australian Submarine Agency,10245.0,professional_technical,supplier_name,company directors course
+CN4135410,random,Education Services,UNIVERSITY OF NEW SOUTH WALES,Department of Defence,13246.43,tertiary,supplier_name,
+CN4136507,random,Training Services,Australian Public Service Commission,Services Australia,14000.0,unspecified,none,APS Commission; topic not stated
+CN4136514,random,Training Services,The Hatchery,Services Australia,51022.4,unspecified,none,
+CN4136523,random,Training Services,Australian Public Service Commission,Services Australia,19000.0,unspecified,none,APS Commission; topic not stated
+CN4136533,random,Training Services,McKinsey & Company,Services Australia,27500.0,unspecified,none,
+CN4137226,random,Training Services,AUSTRALIAN NATIONAL UNIVERSITY,Australian Signals Directorate,11650.0,tertiary,supplier_name,
+CN4137229,random,Training Services,AUSTRALIAN INSTITUTE OF MANAGEMENT EDUCATION AND TRAINING PTY LIMITED,Australian Signals Directorate,13500.0,leadership_coaching,supplier_name,Institute of Management
+CN4137465,random,Events Management,NATIONAL CONVENTION CENTRE CANBERRA (AUSTRALIA) PTY LIMITED,Department of Defence,321327.55,not_training,description,event management
+CN4138812,random,Training Services,THALES,Department of Defence,223667.07,military_operational,outside_knowledge,Thales: defence company
+CN4139092,random,Language Training Services,University of New South Wales,Department of Foreign Affairs and Trade,42342.66,language,description,
+CN4139110,random,Language Training Services,University of New South Wales,Department of Foreign Affairs and Trade,57555.33,language,description,
+CN4139155,random,Training Services,AIRFLITE AVIATION PTY LTD,Department of Defence,11412.65,military_operational,supplier_name,aviation
+CN4139301,random,Learning and development of identified core capabilities,FOURTH PILLAR CONSULTING PTY LTD,Australian Securities and Investments Commission,15000.0,unspecified,none,
+CN4139815,random,Training Services,YANNA RIDER CONSULTING,Department of Defence,17600.0,unspecified,none,
+CN4141251,random,Provision of training,COUNTERSIGHT PROPRIETARY LIMITED T/A - COUNTERSIGHT,Australian Federal Police,79772.0,unspecified,none,
+CN4142046,random,Language Training Services,University of New South Wales,Department of Foreign Affairs and Trade,139910.19,language,description,
+CN4142971,random,Indonesia Digital Evidence and Forensics Training,TAG INTERNATIONAL DEVELOPMENT LIMIT,Department of Home Affairs,27413.24,public_program,description,overseas partner officials; judgement call
+CN4142994,random,Training Services,THE ELEVATOR,Department of Defence,13365.0,unspecified,none,
+CN4143280,random,Public Information Training,TECHNICAL AND FURTHER EDUCATION COMMISSION,"Department of Agriculture, Fisheries and Forestry",16800.0,professional_technical,description,public information
+CN4143795,random,Training Services,SANS TRAINING AUSTRALIA PTY LIMITED,Australian Signals Directorate,17974.0,digital_it,outside_knowledge,SANS
+CN4143868,random,Training Services,THE TRUSTEE FOR PRMEC FAMILY TRUST,Department of Defence,15360.4,unspecified,none,
+CN4144818,random,SEE Project Delivery - Building on important foundation Skills with Wagiman Aboriginal Rangers,BATCHELOR INSTITUTE OF INDIGENOUS,Department of Employment and Workplace Relations,131272.0,public_program,description,SEE project with rangers
+CN4146753,random,IPAA Corporate Membership Fee 2025-26,INSTITUTE OF PUBLIC ADMINISTRATION AUSTRALIA  ACT LIMITED,Department of Education,52800.0,events_memberships,description,
+CN4146904,random,Training Services,SURF LIFE SAVING SERVICES PTY LIMITED,Department of Defence,24150.0,safety_compliance,supplier_name,surf life saving
+CN4146972,random,Training Services,AUSTRALIAN INSTITUTE OF COMPANY DIRECTORS,Department of Defence,10245.0,professional_technical,supplier_name,company directors
+CN4147689,random,Training Services,SCIENCE IN PUBLIC DISCRETIONARY TRUST,Department of Defence,59180.0,professional_technical,supplier_name,science communication; judgement call
+CN4147799,random,Training Services,CATHERINE MCGRATH MEDIA,Department of Defence,30000.0,professional_technical,supplier_name,media
+CN4148212,random,Education Services,CANBERRA GRAMMAR SCHOOL,Department of Defence,15096.37,not_training,supplier_name,school fees
+CN4148240,random,Training Services,THE UNIVERSITY OF NOTRE DAME AUSTRALIA,Department of Defence,50003.0,tertiary,supplier_name,
+CN4148343,random,IT Project Manager Training Program.,PM-PARTNERS GROUP PROJECT MANAGEMENT PARTNERS PTY LTD,Department of Education,197890.0,professional_technical,description,project management
+CN4148549,random,Managers training program,MELBOURNE BUSINESS SCHOOL,Australian Signals Directorate,601232.82,leadership_coaching,description,
+CN4149192,random,Education and Training Services,Adaptable Leadership Pty Ltd,"Department of Climate Change, Energy, the Environment and Water",21450.0,leadership_coaching,supplier_name,
+CN4149695,random,Education and Training Services,THE UNIVERSITY OF WOLLONGONG,Department of Home Affairs,70754.1,tertiary,supplier_name,
+CN4149912,random,Provision of training services,SANS TRAINING AUSTRALIA PTY LIMITED,Australian Federal Police,30074.0,digital_it,outside_knowledge,SANS
+CN4150692,random,Specialist Education and Training Services Team Workshops,KEEGAN LUITERS PTY LTD,"Department of Industry, Science and Resources",12159.4,leadership_coaching,description,team workshops
+CN4151532,random,Provision of Data Visualisation in Excel workshops,DDLS AUSTRALIA PTY LTD,Australian Securities and Investments Commission,45000.01,digital_it,description,
+CN4151809,random,Training workshop,Pycroft Holdings Pty Ltd t/a ACTUS,Australian Transaction Reports and Analysis Centre,10200.0,unspecified,none,
+CN4151842,random,Training Services,OPERATOR SCENARIO PTY LTD,Department of Defence,24860.0,unspecified,none,
+CN4151855,random,Training Services,ISN PSYCHOLOGY PTY LTD,Department of Defence,20421.36,professional_technical,supplier_name,psychology; judgement call
+CN4151857,random,Training Services,CANBERRA GIRLS GRAMMAR SCHOOL,Department of Defence,13796.41,not_training,supplier_name,school fees
+CN4151868,random,Training Equipment,AUSTRALASIAN MILITARY MEDICINE ASSOCIATION INC,Department of Defence,15036.0,military_operational,supplier_name,military medicine
+CN4151957,random,Training Services,PRAXIS ADVISORY PTY LTD,Department of Defence,13431.0,unspecified,none,
+CN4152155,random,Technical Training,J3SEVEN PTY LTD,Department of Defence,49350.44,professional_technical,description,technical
+CN4152454,random,Expeditioner Training - High Risk Trades (3 of 3) - Season 2025/26,Industrial Licencing Solutions,"Department of Climate Change, Energy, the Environment and Water",75000.0,professional_technical,description,high-risk trades; judgement call
+CN4155038,random,Training Services,KINROSS WOLAROI SCHOOL,Department of Defence,23550.0,not_training,supplier_name,school fees
+CN4155849,random,Conference Attendance,Australian HR Institute,Services Australia,51660.0,events_memberships,description,
+CN4156059,random,Traning Services,AUSTRALIAN FEDERAL POLICE,Department of Home Affairs,12265.0,unspecified,none,
+CN4156075,random,Education and training services,NZ CIVIL AVIATION AUTHORITY,Department of Home Affairs,22906.69,professional_technical,supplier_name,civil aviation; judgement call
+CN4156452,random,Conference Registration,ENERGY EFFICIENCY COUNCIL INC,"Department of Climate Change, Energy, the Environment and Water",14363.8,events_memberships,description,
+CN4156602,random,Training Services,DDLS AUSTRALIA PTY LIMITED,Australian Signals Directorate,14485.9,digital_it,outside_knowledge,DDLS: IT training provider
+CN4157195,random,Specialist Education and Training Services,WHON PTY LTD,"Department of Industry, Science and Resources",11770.0,unspecified,none,
+CN4157210,random,Education and Training,JEFF WHALAN LEARNING GROUP,Department of Employment and Workplace Relations,16390.0,events_memberships,outside_knowledge,Jeff Whalan Learning
+CN4157348,random,Training Services,WHON PTY LIMITED,Department of Defence,13165.35,unspecified,none,
+CN4157410,random,Training Services,KJ ROSS AND ASSOCIATES PTY LTD,Department of Defence,10073.25,unspecified,none,
+CN4158456,random,Training Course for Writing Briefs for Decision Makers,MCMILLAN STAFF DEVELOPMENT PTY LTD,"Department of Agriculture, Fisheries and Forestry",24200.0,professional_technical,description,writing
+CN4159182,random,Training Services,COMPASS GROUP B&I HOSPITALITY SERVICES PTY LTD,Department of Defence,32490.0,not_training,supplier_name,hospitality company
+CN4159341,random,Venue Hire - Expeditioner Summit Season 2025/26,C3 convention Centre,"Department of Climate Change, Energy, the Environment and Water",208282.8,not_training,description,venue hire
+CN4159516,random,Training Services,THE TRUSTEE FOR LEARGAS UNIT TRUST,Department of Defence,19673.5,unspecified,none,
+CN4159971,random,Learning and Development,Australian National University,Department of Foreign Affairs and Trade,125840.0,tertiary,supplier_name,
+CN4162194,random,Training Services,NEIL ORME CONSULTING,Australian Submarine Agency,42231.97,unspecified,none,
+CN4162264,random,Training Services,AUSTRALIAN INSTITUTE OF MANAGEMENT EDUCATION AND TRAINING PTY LIMITED,Department of Defence,26990.0,leadership_coaching,supplier_name,Institute of Management
+CN4162274,random,Training Services,COMPASS GROUP DEFENCE HOSPITALITY SERVICES PTY LTD,Department of Defence,18783.31,not_training,supplier_name,hospitality company
+CN4162397,random,Training Services,SANS INSTITUTE,Department of Defence,14683.13,digital_it,outside_knowledge,SANS
+CN4163319,random,staff development and training,"[OVS] DATACAMP, INC.","Department of Climate Change, Energy, the Environment and Water",90000.0,digital_it,outside_knowledge,DataCamp: data skills
+CN4163753,random,Training Services,THE UNIVERSITY OF QUEENSLAND,Department of Defence,924000.0,tertiary,supplier_name,
+CN4163892,random,Training Services,NOVA SYSTEMS AUSTRALIA PTY LTD,Department of Defence,71995.0,military_operational,outside_knowledge,Nova Systems: defence engineering; judgement call
+CN4164183,random,2025-2681 - Executive Indigenous Leaders Program,The University of New South Wales,Australian Public Service Commission,15154.0,leadership_coaching,description,
