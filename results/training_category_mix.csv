@@ -1,0 +1,13 @@
+category,name,group,large_notices,large_value,sample_notices,sample_value,est_small_notices,est_small_value,est_notices,est_value,value_share,notice_share
+public_program,Program delivered to the public,"Program delivery, not staff training",37,519765200.64,7,1331491.36,122.5,20929609.9,159.5,540694810.54,0.546019,0.044451
+not_training,Not education or training,Not training (miscoded),5,36464099.63,15,1075933.07,262.6,16912508.86,267.6,53376608.49,0.053902,0.074554
+military_operational,Military and operational training,Military and operational,18,106333787.95,9,904764.1,157.5,14221917.04,175.5,120555704.99,0.121743,0.048912
+leadership_coaching,"Leadership, management and coaching","Staff development, topic known",2,4229910.66,16,1030656.97,280.1,16200817.34,282.1,20430728.0,0.020632,0.078596
+language,Language training,"Staff development, topic known",1,1072500.0,6,968571.27,105.0,15224897.02,106.0,16297397.02,0.016458,0.029543
+digital_it,"IT, data and digital skills","Staff development, topic known",5,8195069.99,12,1210888.98,210.1,19033870.4,215.1,27228940.39,0.027497,0.059922
+safety_compliance,"Safety, first aid and compliance","Staff development, topic known",2,3305539.9,5,98320.28,87.5,1545488.89,89.5,4851028.79,0.004899,0.024944
+professional_technical,Other professional and technical skills,"Staff development, topic known",2,59129652.31,38,1361235.34,665.2,21397153.22,667.2,80526805.53,0.08132,0.185899
+elearning,E-learning content and platforms,"Staff development, topic known",0,0.0,1,74910.0,17.5,1177504.51,17.5,1177504.51,0.001189,0.004877
+events_memberships,"Conferences, memberships and networks","Staff development, topic known",0,0.0,9,223763.77,157.5,3517325.43,157.5,3517325.43,0.003552,0.043897
+tertiary,"University or TAFE, topic not stated",Topic unknown,10,22523943.29,23,3377509.08,402.6,53090804.48,412.6,75614747.77,0.076359,0.114967
+unspecified,Can't tell from the notice,Topic unknown,6,13172654.26,59,2086996.93,1032.8,32805343.63,1038.8,45977997.89,0.046431,0.289439
