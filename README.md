@@ -1,6 +1,8 @@
 # Australian Government procurement spend analytics (AusTender)
 
-> **Status: in progress (Parts 1 to 4 of 5 done: source profile, spend cube, competition and compliance, categorisation).** The parts still to come are listed in the [roadmap](#roadmap).
+[![CI](https://github.com/nisha1324/austender-procurement-spend/actions/workflows/ci.yml/badge.svg)](https://github.com/nisha1324/austender-procurement-spend/actions/workflows/ci.yml)
+
+> **Status: complete** (all 5 parts: source profile; spend cube; competition and compliance; categorisation; CI and this write-up). See the [recommendations](#recommendations-ranked) and [limitations](#limitations).
 
 The Australian Government publishes a notice for every contract worth $10,000 or more on
 AusTender. That makes it one of the few places where you can see how a large organisation really
@@ -15,6 +17,17 @@ SQL. It asks the questions a procurement lead, a category manager or an audit co
    notices published on time?
 4. **Categorisation:** many notices are coded only to a broad category. Can an LLM-assisted
    categoriser (with an offline fallback) sort them into useful spend categories?
+
+## TL;DR
+
+- **A dashboard built straight from the feed would mislead.** Summing every row overstates value 2.6 times ($170.86bn against $65.41bn), and three in four limited tenders (25,140 of 34,100) are under the $80k line, where an open approach isn't required. Four cheap rules fix it: latest version only, ABN as the supplier key, cancelled notices out, and the $80k line.
+- **The money is concentrated, but supplier dependence isn't the main risk.** 58 of 16,242 suppliers hold half of the $62.21bn committed. Only $4.17bn (7.5% of large-category value) sits in categories concentrated beyond one contract.
+- **Fragmentation is the bigger lever.** 12 large categories worth $19.11bn, such as computer services, management advice and labour hire, are bought by 20 or more agencies from long supplier tails.
+- **Limited tenders almost always cite an allowed reason.** Only 54 of the 8,687 from $80k give none, and all 54 were later amended below $80k. The money to check is the $5.80bn of extensions and sole sources (3,792 notices).
+- **Values bunch just under $80k, but not to avoid competition.** The last $1,000 before the line holds 2.31 times its neighbours (about 196 extra notices), and those notices aren't more often limited tenders (59.7% against 61.3%).
+- **Late reporting is mostly catch-up batches.** 8,390 notices (14.4%) were published more than 42 days after the contract started, and 51.6% of them came out on 166 batch days, led by annual agreements that start on 1 July.
+- **Award values understate what's committed.** Active notices grew 28.0% after award ($48.60bn to $62.21bn), and 308 Veterans' Affairs notices published at the $10,000 reporting threshold now total $1.23bn.
+- **"Education and Training" is mostly not staff training.** Of its $990.2m, 54.6% is programs delivered to the public, staff development is at most $275.6m, and 40.4% of notices say too little for anyone to place. Keyword rules match the hand labels on 77.5% of a random sample. A Claude backend is built and tested but not run, as no API key is set up.
 
 ## Data
 
@@ -278,13 +291,59 @@ codeset, would cost agencies a few words per notice. Until then, the keyword rul
 explainable first pass: trust the categories they name and send the "unspecified" remainder to an LLM
 or a person.
 
+## Part 5: CI on every push
+
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs on every push and pull request:
+
+1. Installs the exact package versions from [`requirements-lock.txt`](requirements-lock.txt), the ones the committed outputs were made with.
+2. Reruns all 4 reports offline from the committed snapshot, and fails if any report, CSV or chart changes by a single byte. It makes no API calls, so it never downloads data or spends money.
+3. Runs `pytest`, including the check that every figure in the [TL;DR](#tldr), the [recommendations](#recommendations-ranked) and Parts 1 to 4 still appears in a generated report. Only the raw codeset test skips, because `data/raw/` isn't in the repo.
+
+**So what for the business:** a figure in this README can't drift away from the code that produced it
+without the badge turning red, so a procurement lead or auditor can quote it without rerunning anything.
+
+## Recommendations, ranked
+
+For the Department of Finance (which runs AusTender and whole-of-government procurement), agency chief
+procurement officers, internal audit and anyone building spend reporting on this feed. Ranked by the
+committed value a fix touches and how directly the evidence points at it. Every figure is from Parts 1 to 4.
+
+| # | Recommendation | Evidence | Owner |
+|---|---|---|---|
+| 1 | **Check how much of the fragmented common spend already goes through panels, then pool the rest.** Start with computer services and labour hire. | 12 large categories, $19.11bn, bought by 20 or more agencies from long supplier tails. Computer services: $5.69bn, 112 agencies, 1,517 suppliers. Labour hire: 108 agencies, 962 suppliers. The API has no panel flag. | Finance (whole-of-government procurement), category managers |
+| 2 | **Test whether the stated reason fits for extensions and sole sources.** | Almost every limited tender from $80k cites an allowed reason, so the question is whether it fits. Extensions (`AD`) and sole sources for technical reasons (`TR`): 3,792 notices, $5.80bn at award. | Internal audit, agency chief procurement officers |
+| 3 | **Report and approve on current value, and flag contracts that grow past a threshold or tenfold.** | Active notices grew 28.0% after award. 1,814 notices under $80k at award are now $80k or more. 308 notices published at $10,000 now total $1.23bn. Contracts let for extreme urgency (`EU`) grew 413.1%. | Agency CFOs, Finance (AusTender reporting) |
+| 4 | **Sign and report 1 July renewals before they start,** beginning with the agencies behind the largest catch-up batches. | 51.6% of late notices came out on 166 batch days. Services Australia published 363 late notices on one day; Veterans' Affairs published its 1 July hospital and nursing agreements in December. | Procurement teams at Services Australia, Veterans' Affairs and Finance |
+| 5 | **Build any spend dashboard on this feed with the four data rules:** latest version only, ABN as the supplier key, cancelled notices out, and limited tenders judged from $80k. | Summing every row overstates value 2.6 times. 2,956 ABNs appear under several names and hold 58.3% of value. 1,272 cancelled notices ($3.20bn). | Procurement analytics and BI teams |
+| 6 | **Confirm each concentrated category is deliberate, and manage its large contracts closely.** | 6 categories, $4.17bn, are concentrated beyond one contract: fuels, advertising, insurance (Comcare), light weapons and ammunition, and two led by CEA Technologies. | Category managers |
+| 7 | **Ask for a short description standard for training notices (topic, audience, format), or finer training codes.** | 40.4% of training notices can't be placed by anyone reading them, so staff development is at most $275.6m of the $990.2m. The keyword rules get 8 of 51 labels that need outside knowledge. | Finance (owner of AusTender and its codeset) |
+| 8 | **Review budgets and delegations set at $80k now that the line is $125k, and use the split-purchase list as an audit sample.** | The last $1,000 before $80k holds 345 notices, 2.31 times its neighbours, but they aren't more often limited tenders. 220 possible split groups: 710 notices, $32.9m. | Internal audit, finance teams that set delegations |
+
+**Data to ask for first,** because each one turns a stand-in here into a fact: the signing date and
+expected value of each contract, which agencies are prescribed corporate entities, a panel (standing
+offer) flag, payments actually made against each contract, and a topic for each training notice.
+
+## Limitations
+
+- **Committed value, not money paid.** A notice records what a contract is worth over its life, so nothing here is spend in one year, and there are no payment records to check it against.
+- **One year of notices, still changing.** These are notices first published in FY2024-25, with amendments up to 4 Nov 2026. Later amendments will move current values. One year is also lumpy, which is why each category's concentration is measured again without its largest notice.
+- **Stand-ins for missing fields.** The API has no signing date, expected value or entity type. The start date, the value at award and the $80k line stand in for them, so prescribed corporate entities ($400k line) and construction ($7.5m line) are judged too strictly.
+- **No panel, consultancy or confidentiality flags,** so fragmented spend can't be netted of panel use, and consultancy spend can't be measured.
+- **Suppliers are grouped by ABN.** Related companies with different ABNs count separately, and the 4,670 notices with no ABN (4,107 of them with overseas suppliers) use the API's supplier id.
+- **Patterns, not findings.** Bunching, possible split purchases, late batches and contract growth show where to look. Each needs the agency's own file to explain it.
+- **The training labels are one person's reading.** Estimates for notices under $1m rest on a random sample of 200: the share with no known topic is 41.0%, with a 95% interval of 34.4% to 47.9%.
+- **No LLM score.** The Claude backend is tested with a fake client only, until an API key is set up.
+- **Category names come from the AusTender codeset of 1 July 2023.** All 537 codes in use match it; 10 family titles are written from the codes under them and marked as such.
+
+Each report's own Limits section has the full detail.
+
 ## Roadmap
 
 - [x] **Part 1: source and profile.** Download, snapshot, the traps in the data and the rules they set.
 - [x] **Part 2: spend cube.** Category names from the AusTender UNSPSC codeset, spend by agency, category and supplier, supplier concentration by category (with and without Defence, and without the largest contract), and a BI-ready cube.
 - [x] **Part 3: competition and compliance.** Limited tenders from $80k by reason and agency, value bunching under thresholds, possible split purchases, late publication and catch-up batches, and growth after award.
 - [x] **Part 4: LLM-assisted categoriser.** A training spend taxonomy, a 288-notice hand-labelled check set, an explainable keyword baseline scored against it, and a Claude backend (built and tested; needs a key to run).
-- [ ] **Part 5: write-up.** CI, TL;DR, ranked recommendations, limitations.
+- [x] **Part 5: write-up.** CI on every push, TL;DR, ranked recommendations, limitations.
 
 ## How to run
 
@@ -309,6 +368,19 @@ pip install anthropic && cp .env.example .env   # then put your key in .env
 python -m scripts.categorise --backend claude
 ```
 
+## Tests
+
+112 tests. The SQL behind every part runs on small hand-written notices with answers worked out by
+hand, including amendments numbered past A9, cancelled copies, placeholder values and catch-up batches.
+The downloader is tested against fake API answers, including its two quirks (an empty day answers
+HTTP 400, and notices at exactly midnight come back twice). The categoriser's rules, prompt and fake
+Claude client are tested without network or a key. The committed snapshot must match its manifest,
+every report and CSV must match a fresh run, and every figure in this README must appear in a
+generated report, with the headline phrases tied to their exact report rows. To check that the tests
+can fail, 97 errors were planted one at a time in the code and in this README, such as `= 10000` turned
+into `<= 10000` in the placeholder check, or a mistyped figure in the TL;DR. 93 were caught straight away; the
+other 4 got new tests and are now caught too.
+
 ## Project structure
 
 ```
@@ -320,5 +392,6 @@ scripts/         download_data.py, build_snapshot.py, check_amendment_values.py,
 sql/             00_load.sql (typed views), profile.sql (Part 1), 01_spend.sql + spend.sql (Part 2),
                  02_compliance.sql + compliance.sql (Part 3), 03_training.sql (Part 4)
 results/         SOURCE_PROFILE.md, AMENDMENT_CHECK.md, SPEND_CUBE.md, COMPLIANCE.md, CATEGORISER.md, CSVs, charts/
-tests/           unit tests on hand-written releases, plus checks on the committed snapshot
+tests/           unit tests on hand-written releases, plus checks on the committed snapshot and this README
+.github/         CI: rerun every report and the tests on each push
 ```
