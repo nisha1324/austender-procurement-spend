@@ -1,4 +1,4 @@
-"""Every figure in the README's Part 1 must come from a generated result file."""
+"""Every figure in the README (TL;DR, Parts 1-4, recommendations, limitations) must come from a generated result file."""
 import re
 from pathlib import Path
 
@@ -23,7 +23,19 @@ def part3() -> str:
 
 
 def part4() -> str:
-    return README.split("## Part 4", 1)[1].split("## Roadmap", 1)[0]
+    return README.split("## Part 4", 1)[1].split("## Part 5", 1)[0]
+
+
+def tldr() -> str:
+    return README.split("## TL;DR", 1)[1].split("## Data", 1)[0]
+
+
+def recommendations() -> str:
+    return README.split("## Recommendations, ranked", 1)[1].split("## Limitations", 1)[0]
+
+
+def limitations() -> str:
+    return README.split("## Limitations", 1)[1].split("## Roadmap", 1)[0]
 
 
 def figures(text: str) -> set[str]:
@@ -211,3 +223,100 @@ def test_part4_headline_phrases_are_tied_to_their_rows():
         assert in_report in SOURCES, in_report
         assert in_readme in part4(), in_readme
     assert "not run" in part4() and "Not run: no `ANTHROPIC_API_KEY`" in SOURCES
+
+
+# ---- Part 5: the TL;DR, recommendations and limitations restate Parts 1-4 ----
+
+def _tied(pairs, text):
+    for in_report, in_readme in pairs:
+        assert in_report in SOURCES, in_report
+        assert in_readme in text, in_readme
+
+
+def test_summary_sections_exist_and_are_not_empty():
+    assert len(tldr().strip().splitlines()) == 8
+    assert "Status: complete" in README
+    rows = [line for line in recommendations().splitlines() if line.startswith("| ") and line[2].isdigit()]
+    assert [int(r.split("|")[1]) for r in rows] == list(range(1, 9))
+    assert all(r.rstrip().endswith("|") and r.split("|")[4].strip() for r in rows), "every recommendation needs an owner"
+
+
+def test_summary_figures_appear_in_the_results():
+    for name, text in [("TL;DR", tldr()), ("recommendations", recommendations()), ("limitations", limitations())]:
+        missing = sorted(f for f in figures(text) if f not in SOURCES and f.lstrip("$") not in ALLOWED_3)
+        assert not missing, f"{name} figures not found in results/*.md: {missing}"
+
+
+def test_tldr_phrases_are_tied_to_their_rows():
+    _tied([
+        ("Summing every version gives $170.86bn, 2.6 times the $65.41bn",
+         "overstates value 2.6 times ($170.86bn against $65.41bn)"),
+        ("25,140 of the 34,100 (73.7%)", "three in four limited tenders (25,140 of 34,100)"),
+        ("16,242, grouped by ABN", "58 of 16,242 suppliers hold half of the $62.21bn committed"),
+        ("**58 of them hold half the committed value**", "58 of 16,242 suppliers hold half"),
+        ("6 go beyond one contract ($4.17bn, 7.5% of large-family value)", "Only $4.17bn (7.5% of large-category value)"),
+        ("12 families, $19.11bn", "12 large categories worth $19.11bn"),
+        ("8,687 of them (36.4%) were limited tenders", "Only 54 of the 8,687 from $80k give none"),
+        ("**54 give neither**", "Only 54 of the 8,687"),
+        ("All 54 have since been amended below $80k", "all 54 were later amended below $80k"),
+        ("extensions and sole sources, 3,792 notices and $5.80bn together",
+         "$5.80bn of extensions and sole sources (3,792 notices)"),
+        ("2.31 times its neighbours", "holds 2.31 times its neighbours (about 196 extra notices)"),
+        ("That is about 196 more notices", "about 196 extra notices"),
+        ("59.7% of the last $1,000 against 61.3% of its neighbours", "(59.7% against 61.3%)"),
+        ("**8,390 of 58,192 notices (14.4%) were published more than 42 days after the contract started**",
+         "8,390 notices (14.4%) were published more than 42 days after the contract started"),
+        ("**51.6% of late notices (4,328 of 8,390) came out in catch-up batches**: 166 days",
+         "51.6% of them came out on 166 batch days"),
+        ("went from $48.60bn to $62.21bn (28.0% more", "grew 28.0% after award ($48.60bn to $62.21bn)"),
+        ("308 Veterans' Affairs notices were first published at exactly $10,000",
+         "308 Veterans' Affairs notices published at the $10,000 reporting threshold"),
+        ("to $1.23bn in total", "now total $1.23bn"),
+        ("| Program delivery, not staff training | 160 | 4.4% | $540.7m | 54.6% |",
+         "Of its $990.2m, 54.6% is programs delivered to the public"),
+        ("staff development here at $275.6m at most", "staff development is at most $275.6m"),
+        ("| Topic unknown | 1,451 | 40.4% |", "40.4% of notices say too little"),
+        ("| Random sample (typical notice) | 200 | 155 | 77.5% |", "77.5% of a random sample"),
+        ("Not run: no `ANTHROPIC_API_KEY`", "A Claude backend is built and tested but not run"),
+    ], tldr())
+
+
+def test_recommendation_phrases_are_tied_to_their_rows():
+    _tied([
+        ("12 families, $19.11bn", "12 large categories, $19.11bn"),
+        ("| 8111 | Computer services | $5.69bn | 4,656 | 112 | 1,517 |",
+         "Computer services: $5.69bn, 112 agencies, 1,517 suppliers"),
+        ("| 8011 | Human resources services | $2.98bn | 5,830 | 108 | 962 |", "Labour hire: 108 agencies, 962 suppliers"),
+        ("extensions and sole sources, 3,792 notices and $5.80bn together", "3,792 notices, $5.80bn at award"),
+        ("went from $48.60bn to $62.21bn (28.0% more", "Active notices grew 28.0% after award"),
+        ("1,814 notices were under $80k at award and are $80k or more now",
+         "1,814 notices under $80k at award are now $80k or more"),
+        ("308 Veterans' Affairs notices were first published at exactly $10,000",
+         "308 notices published at $10,000 now total $1.23bn"),
+        ("to $1.23bn in total", "now total $1.23bn"),
+        ("grew the most (413.1%)", "(`EU`) grew 413.1%"),
+        ("**51.6% of late notices (4,328 of 8,390) came out in catch-up batches**: 166 days",
+         "51.6% of late notices came out on 166 batch days"),
+        ("| Services Australia | 2024-09-16 | 363 |", "Services Australia published 363 late notices on one day"),
+        ("Summing every version gives $170.86bn, 2.6 times", "overstates value 2.6 times"),
+        ("2,956 of 13,026 supplier ABNs", "2,956 ABNs appear under several names"),
+        ("those ABNs hold 58.3% of value", "hold 58.3% of value"),
+        ("1,272 notices are cancelled ($3.20bn)", "1,272 cancelled notices ($3.20bn)"),
+        ("| all agencies | high | beyond one contract | 6 | $4.17bn |", "6 categories, $4.17bn"),
+        ("| Topic unknown | 1,451 | 40.4% |", "40.4% of training notices"),
+        ("staff development here at $275.6m at most", "at most $275.6m of the $990.2m"),
+        ("outside knowledge, 8 of 51", "get 8 of 51 labels"),
+        ("**At $80k the last $1,000 holds 345 notices, 2.31 times its neighbours**",
+         "holds 345 notices, 2.31 times its neighbours"),
+        ("**220 groups, 710 notices, $32.9m**", "220 possible split groups: 710 notices, $32.9m"),
+    ], recommendations())
+
+
+def test_limitation_phrases_are_tied_to_their_rows():
+    _tied([
+        ("4,670 notices have no ABN (4,107 of them with overseas suppliers)",
+         "4,670 notices with no ABN (4,107 of them with overseas suppliers)"),
+        ("41.0% in the sample (95% interval 34.4% to 47.9%)", "41.0%, with a 95% interval of 34.4% to 47.9%"),
+        ("The AusTender Customised UNSPSC Codeset (1 July 2023", "AusTender codeset of 1 July 2023"),
+        ("10 families in the codeset have codes under them but no family title", "10 family titles are written"),
+    ], limitations())
